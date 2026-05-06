@@ -1,0 +1,12 @@
+<div class="email-bar">
+  <div>
+    <h3>{{ with .Get "label" }}{{ . }}{{ else }}Follow the build.{{ end }}</h3>
+    <p>Lab notes, kit announcements, ship date updates. No noise.</p>
+  </div>
+  <!-- REPLACE action URL with your Klaviyo embed form action before going live -->
+  <form class="email-form" action="https://manage.kmail-lists.com/subscriptions/subscribe" method="POST" target="_blank">
+    <input type="hidden" name="g" value="REPLACE_WITH_KLAVIYO_LIST_ID" />
+    <input type="email" name="email" placeholder="you@domain.com" required />
+    <button type="submit">{{ with .Get "button" }}{{ . }}{{ else }}Subscribe{{ end }}</button>
+  </form>
+</div>

@@ -1,0 +1,119 @@
+baseURL: "https://dntddynamics.com"
+title: "DNTD Dynamics"
+locale: "en-us"
+theme: "PaperMod"
+paginate: 10
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: DNTD Dynamics
+  description: "Independent hardware research. Sensing tools built at the edge of what's known — robotics, ecology, biosystems. Based in Snohomish, WA."
+  keywords: [mmWave, ROS2, robotics, sensing, hardware, IWR6843AOP]
+  author: Nic
+  images: ["/images/og-card.png"]
+  ignoreLgos: ['warning-partial-superfluous-prefix']
+
+  defaultTheme: dark
+  disableThemeToggle: false
+  ShowShareButtons: false
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+
+  label:
+    text: "DNTD Dynamics"
+    icon: /logo.svg
+    iconHeight: 28
+
+  homeInfoParams:
+    Title: "Sensing tools built at the edge of what's known."
+    Content: >
+      Independent hardware research from Snohomish, WA. We build sensing and analysis systems
+      for robotics, ecology, and biosystems — designed in public, without corporate permission.
+      The world is still full of fascinating discoveries.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/dntd-dynamics"
+    - name: email
+      url: "mailto:info@dntddynamics.com"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  editPost:
+    URL: ""
+    Text: ""
+    appendFilePath: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: workshop
+      name: Workshop
+      url: /workshop/
+      weight: 10
+    - identifier: lab-notes
+      name: Lab Notes
+      url: /lab-notes/
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+    - identifier: store
+      name: "Pre-order →"
+      url: /store/
+      weight: 50
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+taxonomies:
+  tag: tags
+  category: categories
+  series: series

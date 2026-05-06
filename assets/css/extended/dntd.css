@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --accent: #c8a96e;
+  --accent-hover: #b8954f;
+  --accent2: #7db88a;
+  --mono: 'Space Mono', monospace;
+  --serif: 'Libre Baskerville', serif;
+  --sans: 'DM Sans', sans-serif;
+}
+
+body {
+  font-family: var(--sans);
+}
+
+/* ── Nav ── */
+.nav {
+  border-bottom: 1px solid rgba(200,169,110,0.15);
+}
+.logo a,
+.logo-switches a {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--accent) !important;
+}
+#menu-close-btn,
+#menu-open-btn { color: var(--accent); }
+.menu a {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.menu a:last-child {
+  background: var(--accent);
+  color: #0f0f0d !important;
+  padding: 6px 14px;
+  border-radius: 2px;
+  font-family: var(--mono);
+  font-size: 11px;
+}
+.menu a:last-child:hover {
+  background: var(--accent-hover);
+}
+
+/* ── Home hero ── */
+.first-entry {
+  position: relative;
+  overflow: hidden;
+}
+.first-entry::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(200,169,110,0.04) 59px, rgba(200,169,110,0.04) 60px),
+    repeating-linear-gradient(0deg,  transparent, transparent 59px, rgba(200,169,110,0.04) 59px, rgba(200,169,110,0.04) 60px);
+  pointer-events: none;
+}
+.first-entry .entry-header h1 {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+.first-entry .entry-content {
+  font-weight: 300;
+  color: var(--secondary);
+  max-width: 520px;
+}
+
+/* ── Headings ── */
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+}
+h1 { font-size: 2rem; line-height: 1.25; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.15rem; }
+
+/* ── Post titles ── */
+.post-title {
+  font-family: var(--serif);
+  font-weight: 400;
+}
+
+/* ── Lab note tags ── */
+.post-tags a {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid rgba(200,169,110,0.3);
+  color: var(--accent);
+  padding: 2px 8px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.post-tags a:hover {
+  background: rgba(200,169,110,0.1);
+}
+
+/* ── Accent color overrides ── */
+a { color: var(--accent); }
+a:hover { color: var(--accent-hover); }
+.post-meta, .breadcrumbs a { color: var(--accent); }
+
+/* ── Section labels (use as blockquote style) ── */
+blockquote {
+  border-left: 3px solid var(--accent);
+  font-family: var(--serif);
+  font-style: italic;
+}
+
+/* ── Code / mono ── */
+code, pre {
+  font-family: var(--mono);
+  font-size: 0.85em;
+}
+
+/* ── Buttons ── */
+.button,
+button[type=submit] {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  background: var(--accent);
+  color: #0f0f0d;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.button:hover { background: var(--accent-hover); }
+
+/* ── Product / spec tables ── */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 1.5rem 0;
+}
+.spec-table td {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(200,169,110,0.15);
+  vertical-align: top;
+}
+.spec-table td:first-child {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--secondary);
+  width: 38%;
+  text-transform: uppercase;
+}
+
+/* ── Status badges ── */
+.badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+.badge-active  { background: rgba(125,184,138,0.15); color: #7db88a; border: 1px solid rgba(125,184,138,0.3); }
+.badge-dev     { background: rgba(200,169,110,0.12); color: #c8a96e; border: 1px solid rgba(200,169,110,0.25); }
+.badge-poc     { background: rgba(200,169,110,0.08); color: #c8a96e; border: 1px solid rgba(200,169,110,0.2); }
+.badge-soon    { background: rgba(154,148,136,0.12); color: #888; border: 1px solid rgba(154,148,136,0.2); }
+
+/* ── Email signup shortcode ── */
+.email-bar {
+  background: var(--entry);
+  border: 1px solid rgba(200,169,110,0.2);
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.email-bar h3 {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 0.2rem;
+}
+.email-bar p { font-size: 13px; color: var(--secondary); margin: 0; }
+.email-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.email-form input[type=email] {
+  font-family: var(--sans);
+  font-size: 13px;
+  background: var(--theme);
+  border: 1px solid rgba(200,169,110,0.25);
+  color: var(--primary);
+  padding: 9px 14px;
+  border-radius: 2px;
+  outline: none;
+  width: 220px;
+}
+.email-form input[type=email]::placeholder { color: var(--secondary); }
+.email-form button {
+  font-family: var(--mono);
+  font-size: 11px;
+  background: var(--accent);
+  color: #0f0f0d;
+  border: none;
+  border-radius: 2px;
+  padding: 9px 14px;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+/* ── Pre-order CTA box ── */
+.preorder-box {
+  border: 1px solid rgba(200,169,110,0.35);
+  border-radius: 4px;
+  padding: 2rem;
+  margin: 2rem 0;
+  background: rgba(200,169,110,0.04);
+}
+.preorder-price {
+  font-family: var(--mono);
+  font-size: 2rem;
+  color: var(--accent);
+  margin: 0.5rem 0 0.25rem;
+}
+.preorder-note {
+  font-size: 12px;
+  color: var(--secondary);
+  margin-bottom: 1.25rem;
+}
+
+/* ── Footer ── */
+.footer {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  border-top: 1px solid rgba(200,169,110,0.15);
+}
