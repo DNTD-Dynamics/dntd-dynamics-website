@@ -15,7 +15,7 @@ minify:
 params:
   env: production
   title: DNTD Dynamics
-  description: "Independent hardware research. Sensing tools built at the edge of what's known — robotics, ecology, biosystems. Based in Snohomish, WA."
+  description: "Independent hardware research. Sensing tools built at the edge of what's known — robotics, ecology, biosystems. Based in the Pacific Northwest."
   keywords: [mmWave, ROS2, robotics, sensing, hardware, IWR6843AOP]
   author: Nic
   images: ["/images/og-card.png"]
