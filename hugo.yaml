@@ -53,10 +53,11 @@ params:
 
   homeInfoParams:
     Title: "DNTD building for what comes next."
-    Content: |
+    Content: >
       Independent hardware research from the Pacific Northwest. We build sensing and analysis systems
       for robotics, ecology, and biosystems — open-source designs, without corporate permission.
-
+      <br>
+      <br>
       Real hardware. Real data. True discovery.
 
   socialIcons:
