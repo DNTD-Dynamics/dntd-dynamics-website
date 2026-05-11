@@ -56,7 +56,7 @@ params:
     Content: >
       Independent hardware research from the Pacific Northwest. We build sensing and analysis systems
       for robotics, ecology, and biosystems — open-source designs, without corporate permission.
-      Real hardware. Real data. True discovery.
+      <br>Real hardware. Real data. True discovery.
 
   socialIcons:
     - name: github
