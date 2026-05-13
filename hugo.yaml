@@ -2,7 +2,8 @@ baseURL: "https://dntddynamics.com/"
 title: "DNTD Dynamics"
 locale: "en-us"
 theme: "PaperMod"
-paginate: 10
+pagination:
+  pagerSize: 10
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -12,6 +13,11 @@ minify:
   disableXML: true
   minifyOutput: true
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   env: production
   title: DNTD Dynamics
@@ -19,7 +25,7 @@ params:
   keywords: [mmWave, ROS2, robotics, sensing, hardware, IWR6843AOP]
   author: Nic
   images: ["/images/og-card.png"]
-  ignoreLgos: ['warning-partial-superfluous-prefix']
+  ignoreLogs: ['warning-partial-superfluous-prefix', 'warning-goldmark-raw-html']
 
   defaultTheme: dark
   disableThemeToggle: false
@@ -55,9 +61,8 @@ params:
     Title: "DNTD building for what comes next."
     Content: |
       Independent hardware research from the Pacific Northwest. We build sensing and analysis systems
-      for robotics, ecology, and biosystems — open-source designs, without corporate permission.  
-      
-      
+      for robotics, ecology, and biosystems — open-source designs, without corporate permission.
+
       **Real hardware. Real data. True discovery.**
 
   socialIcons:
