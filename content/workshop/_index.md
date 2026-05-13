@@ -42,6 +42,8 @@ Built and tested on a Jetson Orin Nano Super. The config file included with the 
 - Getting started guide — written for builders, not datasheets
 - Private repository access for all kit owners
 
+{{< figure src="/images/workshop/workshop-evm.jpg" alt="IWR6843AOP EVM evaluation module" >}}
+
 ### Specs
 
 <table class="spec-table">
@@ -56,11 +58,15 @@ Built and tested on a Jetson Orin Nano Super. The config file included with the 
   <tr><td>Ships as</td><td>Evaluation board — development use only</td></tr>
 </table>
 
+{{< figure src="/images/workshop/workshop-evm-working.jpg" alt="IWR6843AOP mmWave output" >}}
+
 ### Why no camera, why not lidar
 
 Camera-based collision detection fails in direct sunlight, low light, dust, and any time the obstacle is behind something else in frame. Lidar is expensive, mechanically complex, and has its own occlusion problems on manipulator arms in motion.
 
 mmWave radar has no moving parts, costs under $200, works in complete darkness, and doesn't care about dust or spray. The tradeoff is resolution — you get a sparse point cloud, not a photo. For collision detection and presence sensing on a robot arm, that's exactly the tradeoff you want.
+
+{{< figure src="/images/workshop/workshop-jetson.jpg" alt="Jetson Orin development setup" >}}
 
 ---
 
