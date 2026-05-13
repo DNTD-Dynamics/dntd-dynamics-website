@@ -4,7 +4,12 @@ description: "Independent hardware research from Snohomish, Washington."
 url: /about/
 layout: page
 showToc: false
+cover:
+    image: /images/about/about-hero.jpg
+    alt: "Cascades canyon road"
+    relative: false
 ---
+
 
 ## What Bell Labs was in 1965 — starting in a lab in the Cascades.
 
