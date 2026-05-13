@@ -244,3 +244,20 @@ button[type=submit] {
   letter-spacing: 0.04em;
   border-top: 1px solid rgba(200,169,110,0.15);
 }
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--secondary);
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
