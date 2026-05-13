@@ -66,6 +66,17 @@ params:
     - name: email
       url: "mailto:info@dntddynamics.com"
 
+  footer:
+    links:
+      - name: Privacy Policy
+        url: /privacy/
+      - name: Terms of Service
+        url: /terms/
+      - name: Returns & Refunds
+        url: /returns/
+      - name: Shipping
+        url: /shipping/
+
   cover:
     hidden: false
     hiddenInList: false
