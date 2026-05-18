@@ -45,16 +45,17 @@ No venture capital. No external investors. The research agenda belongs to the pe
 
 ---
 
-## The three rings
+## The purpose is to see further into what's possible, into what's not yet visible.
 
-**Ring 1 — Core platform.**
-Sensing fusion middleware: a hardware-agnostic, ROS2-native sensor abstraction layer. Open-source interface, proprietary calibration and fusion internals. The platform everything runs on.
+Every product DNTD ships sits above a much larger body of work — research that isn't ready to ship, questions that don't have answers yet, disciplines that don't obviously connect to anything sellable today.
 
-**Ring 2 — Products.**
-Hardware kits running on the middleware. First product: the mmWave 360° Sensing Kit for robot arms. Environmental and ecological monitoring is the natural second vertical — same hardware profile, different market.
+That's intentional. The depth is the point.
 
-**Ring 3 — Research cluster.**
-Long bets. Mycology, genetics, quantum chemistry simulation. Bell Labs–style: the work that seems unrelated to the products is often what makes the products possible ten years later.
+Above the surface — Platform and Products.
+Sensing fusion middleware and hardware kits. Real tools, built to work, designed to last beyond any single technology cycle.
+
+Below the surface — The Research Mass.
+Mycology, genetics, quantum chemistry simulation, biosystems sensing. Long bets with no guaranteed return. The work that seems disconnected from the products today is often what makes entirely new products possible ten years from now.
 
 ---
 
