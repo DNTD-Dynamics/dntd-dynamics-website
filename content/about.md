@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Independent hardware research from Snohomish, Washington."
+description: "The next discoveries are waiting. Most people aren't looking."
 url: /about/
 layout: page
 showToc: false
@@ -10,8 +10,7 @@ cover:
     relative: false
 ---
 
-
-*The next discoveries are waiting. Most people aren't looking.*
+*Independent hardware research from the Pacific Northwest.*
 
 ## Mission 
 
