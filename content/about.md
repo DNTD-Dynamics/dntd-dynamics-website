@@ -14,7 +14,7 @@ cover:
 
 ## Mission 
 
-DNTD Dynamics is an independent hardware and biosystems research company built on a simple belief: the physical world still has more to reveal than we've imagined, and the tools to reveal it haven't been built yet. We build sensing and analysis systems at the intersection of embedded hardware, machine learning, and physical science — pushing beyond what's currently possible to find the questions worth answering. The interesting problems are rarely being explored in the open. This is the place that changes that.
+DNTD Dynamics is an independent hardware and biosystems research company founded int he Pacific Northwest built on a simple belief: the physical world still has more to reveal than we've imagined, and the tools to reveal it haven't been built yet. We build sensing and analysis systems at the intersection of embedded hardware, machine learning, and physical science — pushing beyond what's currently possible to find the questions worth answering. The interesting problems are rarely being explored in the open. This is the place that changes that.
 
 Self-funded. No investors. Long time horizons.
 
