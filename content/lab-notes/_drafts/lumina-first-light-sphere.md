@@ -1,6 +1,7 @@
 ---
 title: "Project Lumina — first light through the sphere"
 date: 2026-04-15
+draft: true
 tags: [lumina, optics, first-light]
 summary: "The sphere is beautiful. The projection isn't — yet. Caustic interference is worse than the ray-trace simulator predicted at close projection distances. Adjusting DLP-to-sphere distance next."
 showToc: false
