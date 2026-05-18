@@ -24,7 +24,7 @@ Hardware goal: three-sensor array covering the full arm sweep volume. Current ph
 
 Local AI runtime for the homelab and eventually the sensing platform. Mistral 7B via Ollama, ChromaDB RAG for long-term memory, Home Assistant integration, hybrid intent router. SQLite for action logging.
 
-Running on NucBox K6 (Ryzen 7 7840HS, 32GB DDR5). Wake word detection is the next major feature — always-running Python process before porting to ESP32 per room.
+Running on NucBox K6 (Ryzen 7 7840HS, 32GB DDR5). Wake word detection is the next major feature — always-running Python process before porting to each room.
 
 Long-term role: the OS layer bundled with the sensing middleware. Sterling manages sensor pipelines, logs experimental data, runs inference, handles automation. Privacy-first, no cloud dependency required.
 
@@ -34,11 +34,14 @@ Long-term role: the OS layer bundled with the sensing middleware. Sterling manag
 
 ## 03 — Project Lumina <span class="badge badge-poc">POC</span>
 
-Holographic refractive display. Architecture: DLP projector → 50mm borosilicate glass sphere → frosted acrylic dome → SLM layer for multi-view steering.
+There's a display project in progress. The goal is a compact, 
+self-contained volumetric display — the kind of thing that makes 
+you stop and look twice.
 
-Parts in hand: 50mm borosilicate sphere, Canon Rayo S1 pico projector. Python ray-trace simulator built. Phase 1 POC in progress — single DLP beneath the sphere, frosted acrylic dome, ~$150 total.
+Parts are in hand. Early results are promising and strange in equal 
+measure. The full architecture isn't something we're ready to publish yet.
 
-North star: the compact holographic display from the film *65*. Phase 2 adds SLM layer and dual DLPs entering the sphere from the sides. Phase 1 must prove before Phase 2 begins.
+More when it's further along.
 
 [→ Lab notes tagged lumina](/tags/lumina/)
 
@@ -56,7 +59,7 @@ Motivating application for the genetics research thread — contamination detect
 
 ## 05 — Gardening Robot Arm <span class="badge badge-dev">Dev</span>
 
-6-DOF arm on Raspberry Pi 5 with ROS2 and ESP32 motor control. Rosbridge dashboard confirmed end-to-end — joint commands flowing from browser to motors.
+6-DOF arm on Jetson Orion Nano Super and Raspberry Pi 5 with ROS2 and ESP32 motor control. Rosbridge dashboard confirmed end-to-end — joint commands flowing from browser to motors.
 
 Primary role now: mmWave test platform and reference implementation for the sensing kit. The demo video for the pre-order launch will be shot on this arm.
 
@@ -66,7 +69,7 @@ Primary role now: mmWave test platform and reference implementation for the sens
 
 ## 06 — Piezo / Frequency Analyzer <span class="badge badge-dev">Dev</span>
 
-Plant biorhythm sensing using piezo vibration and INA828 + OPA1679 signal chain. Arduino FFT firmware, browser-based spectrum visualizer. Bridges the environmental sensing and biosystems verticals.
+Plant biorhythm sensing using piezo vibration. Arduino FFT firmware, browser-based spectrum visualizer. Bridges the environmental sensing and biosystems verticals.
 
 ---
 
