@@ -59,7 +59,7 @@ Motivating application for the genetics research thread — contamination detect
 
 ## 05 — Gardening Robot Arm <span class="badge badge-dev">Dev</span>
 
-6-DOF arm on Jetson Orion Nano Super and Raspberry Pi 5 with ROS2 and ESP32 motor control. Rosbridge dashboard confirmed end-to-end — joint commands flowing from browser to motors.
+6-DOF arm on Raspberry Pi 5 with ROS2 and ESP32 motor control. Rosbridge dashboard confirmed end-to-end — joint commands flowing from browser to motors.
 
 Primary role now: mmWave test platform and reference implementation for the sensing kit. The demo video for the pre-order launch will be shot on this arm.
 
