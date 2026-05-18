@@ -11,9 +11,9 @@ cover:
 ---
 
 
-## What Bell Labs was in 1965 — starting in a lab in the Cascades.
+## The next discoveries are waiting. Most people aren't looking.
 
-DNTD Dynamics is an independent hardware research company founded by Nic, based in Snohomish, Washington. We build sensing and analysis systems at the intersection of embedded hardware, machine learning, and physical science.
+DNTD Dynamics is an independent hardware and biosystems research company built on a simple belief: the physical world still has more to reveal than we've imagined, and the tools to reveal it haven't been built yet. We build sensing and analysis systems at the intersection of embedded hardware, machine learning, and physical science — pushing beyond what's currently possible to find the questions worth answering. The interesting problems are rarely being explored in the open. This is the place that changes that.
 
 Self-funded. No investors. Long time horizons.
 

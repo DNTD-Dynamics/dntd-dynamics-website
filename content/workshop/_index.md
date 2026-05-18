@@ -27,7 +27,7 @@ Built and tested on a Jetson Orin Nano Super. The config file included with the 
 ### Pre-order — $279
 
 <div class="preorder-price">$279</div>
-<p class="preorder-note">Free domestic shipping · Evaluation board for development use · Charge on order · Ships Q3 2026</p>
+<p class="preorder-note">Evaluation board for development use · Charge on order · Ships Q3 2026</p>
 
 **[→ Pre-order on the store page](/store/)**
 
@@ -74,7 +74,7 @@ mmWave radar has no moving parts, costs under $200, works in complete darkness, 
 
 <span class="badge badge-soon">Out of stock — notify me</span>
 
-Lower-power mobile variant of the kit. Same ROS2 integration, same documentation standard, optimized for legged robots and mobile platforms where power budget matters.
+Lower-power mobile variant of the kit. Same ROS2 integration, same documentation standard, optimized for standalone robots and mobile platforms where power budget matters.
 
 Currently out of stock at DigiKey. Join the list to be notified when available at **$199**.
 

@@ -61,7 +61,7 @@ Always power-cycle after changing switches. The SOP mode is latched at boot.
 
 mmWave Studio is TI's GUI tool for the mmWave EVM family. It's the obvious first thing to try. Don't.
 
-mmWave Studio requires the **MMWAVEICBOOST carrier board** for full functionality. The BOOST board has FTDI GPIO lines that Studio uses to control the SOP pins and issue hardware resets in software. The IWR6843AOPEVM standalone board doesn't have this, so Studio always fails at `Calling_ConnectTarget`.
+mmWave Studio requires the **MMWAVEICBOOST carrier board** for full functionality at an additional cost. The BOOST board has FTDI GPIO lines that Studio uses to control the SOP pins and issue hardware resets in software. The IWR6843AOPEVM standalone board doesn't have this, so Studio always fails at `Calling_ConnectTarget`.
 
 There's also a `FTD2XX.dll` dependency that isn't included in the installer — you'll spend time fixing that first, then hit the connection failure anyway.
 
