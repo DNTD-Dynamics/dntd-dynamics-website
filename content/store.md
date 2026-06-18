@@ -13,7 +13,7 @@ showToc: false
 <div class="preorder-box">
 
 <div class="preorder-price">$279</div>
-<p class="preorder-note">Free domestic shipping included · Domestic orders only · Evaluation board for development use · You are charged at time of order · Ship date Q3 2026 (conservative estimate)</p>
+<p class="preorder-note"> Domestic orders only · Evaluation board for development use (FCC cert coming) · You are charged at time of order · Ship date Q3 2026 (conservative estimate)</p>
 
 <!-- REPLACE THIS HREF WITH YOUR STRIPE PAYMENT LINK BEFORE GOING LIVE -->
 <a href="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK" class="button">
@@ -58,6 +58,6 @@ Waiting for the IWRL6432AOP mobile kit ($199) or just want updates on when the 6
 
 ### Legal notes
 
-This product ships as an evaluation board for development use only. It is not FCC-certified for commercial consumer use. Purchasers are responsible for compliance with applicable regulations in their jurisdiction.
+This product ships as an evaluation board for development use only. It is not FCC-certified for commercial consumer use (FCC cert coming soon). Purchasers are responsible for compliance with applicable regulations in their jurisdiction.
 
 For return and refund policy, see [Returns](/returns/). For full terms, see [Terms of Service](/terms/).

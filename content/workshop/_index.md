@@ -6,9 +6,9 @@ layout: page
 showToc: false
 ---
 
-Hardware for builders who need to sense the world.
+Hardware, software, and simulations for builders who need to sense the world.
 
-Purpose-built sensing kits with full ROS2 integration, open-source firmware, and documentation written by someone who actually debugged the hardware.
+Purpose-built kits with focused integration, open-source firmware, and documentation written by someone who actually debugged the hardware.
 
 ---
 
@@ -74,8 +74,8 @@ mmWave radar has no moving parts, costs under $200, works in complete darkness, 
 
 <span class="badge badge-soon">Out of stock — notify me</span>
 
-Lower-power mobile variant of the kit. Same ROS2 integration, same documentation standard, optimized for standalone robots and mobile platforms where power budget matters.
+Lower-power mobile variant of the mmWave kit. Same ROS2 integration, same documentation standard, optimized for standalone robots and mobile platforms where power budget matters.
 
-Currently out of stock at DigiKey. Join the list to be notified when available at **$199**.
+Kits coming soone. Join the list to be notified when available at **$199**.
 
 {{< email-signup label="Notify me when the 6432 kit is available" button="Notify me" >}}

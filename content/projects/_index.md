@@ -57,23 +57,13 @@ Motivating application for the genetics research thread — contamination detect
 
 ---
 
-## 05 — Gardening Robot Arm <span class="badge badge-dev">Dev</span>
-
-6-DOF arm on Raspberry Pi 5 with ROS2 and ESP32 motor control. Rosbridge dashboard confirmed end-to-end — joint commands flowing from browser to motors.
-
-Primary role now: mmWave test platform and reference implementation for the sensing kit. The demo video for the pre-order launch will be shot on this arm.
-
-[→ Lab notes tagged robotics](/tags/robotics/)
-
----
-
-## 06 — Piezo / Frequency Analyzer <span class="badge badge-dev">Dev</span>
+## 05 — Piezo / Frequency Analyzer <span class="badge badge-dev">Dev</span>
 
 Plant biorhythm sensing using piezo vibration. Arduino FFT firmware, browser-based spectrum visualizer. Bridges the environmental sensing and biosystems verticals.
 
 ---
 
-## 07 — Genetics / PySCF <span class="badge badge-soon">Research</span>
+## 06 — Genetics / PySCF <span class="badge badge-soon">Research</span>
 
 Quantum chemistry simulation for Lion's Mane neurogenic compounds — hericenones and erinacines. PySCF 2.12.1 running on NucBox K6.
 

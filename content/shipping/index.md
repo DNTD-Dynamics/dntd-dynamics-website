@@ -21,7 +21,7 @@ We do not ship internationally at this time. If you are outside the US or Canada
 
 ## Shipping Costs
 
-**United States:** Shipping is included in the product price. No additional shipping charge at checkout.
+**United States:** Shipping will be calculated and added at checkout.
 
 **Canada:** Shipping costs will be calculated and added at checkout. Canadian orders may also be subject to customs duties, import taxes, and brokerage fees upon delivery. These charges are the responsibility of the buyer and are not included in our pricing. We recommend checking with Canada Border Services Agency (CBSA) for estimated import costs before ordering.
 
