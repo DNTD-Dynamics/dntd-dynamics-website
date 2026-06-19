@@ -4,7 +4,7 @@
 
 <div class="dntd-home">
 
-  <!-- ============ FULL-WIDTH HERO IMAGE ============ -->
+  <!-- ============ HERO IMAGE (contained width, natural aspect ratio) ============ -->
   <div class="dntd-hero-image">
     <img src="{{ $hero }}" alt="Mountain lake reflection, Pacific Northwest" loading="eager" />
   </div>
@@ -78,23 +78,15 @@
 
   /* Hero image: full-bleed regardless of theme content width */
   .dntd-hero-image {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    max-height: 75vh;
-    overflow: hidden;
-    margin-bottom: 2.5rem;
+    margin: 0 1rem 2.5rem;
     border-bottom: 1px solid var(--border, #2e2e33);
+    padding-bottom: 2.5rem;
   }
   .dntd-hero-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 65%;
+    height: auto;
     display: block;
+    border-radius: 6px;
   }
 
   .dntd-hero-text {
@@ -200,9 +192,6 @@
   @media (max-width: 640px) {
     .dntd-entry-grid {
       grid-template-columns: 1fr;
-    }
-    .dntd-hero-image {
-      max-height: 48vh;
     }
     .dntd-hero-title {
       font-size: 1.7rem;
