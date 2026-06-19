@@ -4,30 +4,32 @@
 
 <div class="dntd-home">
 
-  <!-- ============ HERO IMAGE (contained width, natural aspect ratio) ============ -->
-  <div class="dntd-hero-image">
-    <img src="{{ $hero }}" alt="Mountain lake reflection, Pacific Northwest" loading="eager" />
-  </div>
+  <!-- ============ HERO: backdrop image with overlaid text ============ -->
+  <div class="dntd-hero">
+    <div class="dntd-hero-bg">
+      <img src="{{ $hero }}" alt="Mountain lake reflection, Pacific Northwest" loading="eager" />
+      <div class="dntd-hero-scrim"></div>
+    </div>
 
-  <!-- ============ TITLE / INTRO (existing homeInfoParams content) ============ -->
-  {{- with .Site.Params.homeInfoParams }}
-  <div class="dntd-hero-text">
-    <h1 class="dntd-hero-title">{{ .Title }}</h1>
-    <div class="dntd-hero-content">
-      {{ .Content | markdownify }}
+    <div class="dntd-hero-overlay">
+      {{- with .Site.Params.homeInfoParams }}
+      <h1 class="dntd-hero-title">{{ .Title }}</h1>
+      <div class="dntd-hero-content">
+        {{ .Content | markdownify }}
+      </div>
+      {{- end }}
+
+      {{- with .Site.Params.socialIcons }}
+      <div class="dntd-hero-social">
+        {{- range . }}
+        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .name | title }}">
+          {{- partial "svg.html" . -}}
+        </a>
+        {{- end }}
+      </div>
+      {{- end }}
     </div>
   </div>
-  {{- end }}
-
-  {{- with .Site.Params.socialIcons }}
-  <div class="dntd-hero-social">
-    {{- range . }}
-    <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .name | title }}">
-      {{- partial "svg.html" . -}}
-    </a>
-    {{- end }}
-  </div>
-  {{- end }}
 
   <!-- ============ ON THE BENCH RIGHT NOW ============ -->
   <section class="dntd-bench">
@@ -76,49 +78,80 @@
     margin: 0 auto;
   }
 
-  /* Hero image: full-bleed regardless of theme content width */
-  .dntd-hero-image {
-    margin: 0 1rem 2.5rem;
+  /* Hero: full-bleed backdrop image with overlaid text */
+  .dntd-hero {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-bottom: 3rem;
     border-bottom: 1px solid var(--border, #2e2e33);
-    padding-bottom: 2.5rem;
   }
-  .dntd-hero-image img {
+  .dntd-hero-bg {
+    position: absolute;
+    inset: 0;
+  }
+  .dntd-hero-bg img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
     display: block;
-    border-radius: 6px;
+    filter: saturate(0.75) brightness(0.7);
   }
-
-  .dntd-hero-text {
-    padding: 0.5rem 1rem 0;
-    margin-bottom: 1rem;
+  .dntd-hero-scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(10, 10, 12, 0.88) 0%,
+      rgba(10, 10, 12, 0.55) 35%,
+      rgba(10, 10, 12, 0.15) 65%,
+      rgba(10, 10, 12, 0.05) 100%
+    );
+  }
+  .dntd-hero-overlay {
+    position: relative;
+    z-index: 1;
+    padding: 3rem 1.5rem 3rem;
+    max-width: var(--main-width, 1100px);
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
   }
   .dntd-hero-title {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     line-height: 1.15;
     margin-bottom: 0.9rem;
+    color: #f4f4f2;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
   }
   .dntd-hero-content {
     font-size: 1.05rem;
     line-height: 1.6;
-    color: var(--secondary, #aaa);
+    color: rgba(235, 235, 232, 0.88);
     max-width: 640px;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
   }
   .dntd-hero-content strong {
-    color: var(--primary, #eee);
+    color: #fff;
   }
-
   .dntd-hero-social {
     display: flex;
     gap: 1rem;
-    padding: 0 1rem;
-    margin: 1.25rem 0 3rem;
+    margin-top: 1.25rem;
   }
   .dntd-hero-social a {
-    color: var(--secondary, #aaa);
+    color: rgba(235, 235, 232, 0.8);
     display: inline-flex;
   }
-  .dntd-hero-social a:hover { color: var(--primary, #eee); }
+  .dntd-hero-social a:hover { color: #fff; }
   .dntd-hero-social svg { width: 20px; height: 20px; }
 
   /* On the bench strip */
@@ -192,6 +225,9 @@
   @media (max-width: 640px) {
     .dntd-entry-grid {
       grid-template-columns: 1fr;
+    }
+    .dntd-hero {
+      min-height: 56vh;
     }
     .dntd-hero-title {
       font-size: 1.7rem;
