@@ -7,7 +7,6 @@
   <!-- ============ FULL-WIDTH HERO IMAGE ============ -->
   <div class="dntd-hero-image">
     <img src="{{ $hero }}" alt="Mountain lake reflection, Pacific Northwest" loading="eager" />
-    <div class="dntd-hero-fade"></div>
   </div>
 
   <!-- ============ TITLE / INTRO (existing homeInfoParams content) ============ -->
@@ -88,21 +87,13 @@
     max-height: 56vh;
     overflow: hidden;
     margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border, #2e2e33);
   }
   .dntd-hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-  }
-  .dntd-hero-fade {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 40%;
-    background: linear-gradient(to bottom, rgba(17,17,20,0) 0%, var(--theme, #181818) 92%);
-    pointer-events: none;
   }
 
   .dntd-hero-text {
