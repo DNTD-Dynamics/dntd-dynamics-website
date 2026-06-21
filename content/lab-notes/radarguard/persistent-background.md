@@ -28,7 +28,7 @@ The wall has been there since the beginning. The person has not. The model now t
 
 ## What's next
 
-Phase 5 closes the background model. The sensor knows the room, remembers it across restarts, and can't be fooled by someone standing still.
+This closes the background model. The sensor knows the room, remembers it across restarts, and can't be fooled by someone standing still.
 
 The next gap is discrimination. The sensor can tell something new is there — but it can't yet tell a person walking through from a cart rolling past. That's Phase 6.
 
