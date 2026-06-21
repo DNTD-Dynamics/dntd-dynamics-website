@@ -1,6 +1,6 @@
 ---
 title: "Persistent background map — the sensor shouldn't relearn the room every boot"
-date: 2026-05-21
+date: 2026-05-19
 tags: [mmwave, ros2, robotics, safety]
 summary: "The startup background-learning phase is necessary — but only once. Phase 5 makes the learned map persist across reboots, and closes the loophole where a person standing still long enough could be quietly absorbed into the background."
 showToc: true
