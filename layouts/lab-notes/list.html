@@ -1,0 +1,123 @@
+{{- define "main" -}}
+
+{{- $hasSubsections := gt (len .Sections) 0 }}
+
+{{- if $hasSubsections }}
+{{/* This page has child sections (i.e. it's the top-level /lab-notes/ page) — render the project card grid */}}
+
+<article class="dntd-labnotes-index">
+  <header class="post-single">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+    {{- end }}
+    {{- if .Content }}
+    <div class="post-content">{{ .Content }}</div>
+    {{- end }}
+  </header>
+
+  <div class="dntd-project-grid">
+    {{- range .Sections.ByWeight }}
+    {{- $count := len .RegularPagesRecursive }}
+    {{- if gt $count 0 }}
+    <a class="dntd-project-card" href="{{ .Permalink }}">
+      <h3>{{ .Title }}</h3>
+      {{- with .Description }}
+      <p>{{ . }}</p>
+      {{- end }}
+      <span class="dntd-project-count">{{ $count }} post{{ if ne $count 1 }}s{{ end }}</span>
+    </a>
+    {{- end }}
+    {{- end }}
+  </div>
+</article>
+
+<style>
+  .dntd-project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--border, #2e2e33);
+    border: 1px solid var(--border, #2e2e33);
+    margin-top: 2rem;
+  }
+  .dntd-project-card {
+    background: var(--theme, #1e1e22);
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    transition: background 0.15s ease;
+  }
+  .dntd-project-card:hover {
+    background: var(--hover, #27272c);
+  }
+  .dntd-project-card h3 {
+    font-size: 1.15rem;
+    color: var(--primary, #eee);
+  }
+  .dntd-project-card p {
+    font-size: 0.92rem;
+    color: var(--secondary, #999);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .dntd-project-count {
+    font-size: 0.78rem;
+    color: var(--secondary, #777);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.4rem;
+  }
+
+  @media (max-width: 640px) {
+    .dntd-project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+{{- else }}
+{{/* This is a child section (radarguard/, lumina/) — fall back to PaperMod's normal post-list rendering */}}
+{{- $pages := .RegularPages }}
+
+<header class="post-single">
+  <h1 class="post-title">{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description }}</div>
+  {{- end }}
+  {{- if .Content }}
+  <div class="post-content">{{ .Content }}</div>
+  {{- end }}
+</header>
+
+<hr>
+
+{{- range $pages }}
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>{{ .Title }}</h2>
+  </header>
+  {{- if .Description }}
+  <div class="entry-content">
+    <p>{{ .Description }}</p>
+  </div>
+  {{- else if .Summary }}
+  <div class="entry-content">
+    <p>{{ .Summary }}</p>
+  </div>
+  {{- end }}
+  <footer class="entry-footer">
+    <span>{{ .Date.Format "January 2, 2006" }}</span>
+    {{- if .Params.ShowReadingTime | default true }}
+    <span> · {{ .ReadingTime }} min</span>
+    {{- end }}
+  </footer>
+  <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+
+{{- end }}
+
+{{- end -}}
+
