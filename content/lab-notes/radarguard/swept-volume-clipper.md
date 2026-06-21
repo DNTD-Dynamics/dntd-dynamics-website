@@ -2,7 +2,7 @@
 title: "Swept-volume workspace clipper — the sensor finally knows what the arm can reach"
 date: 2026-05-21
 tags: [mmwave, ros2, robotics, safety, kinematics]
-summary: "Phase 7 teaches the safety system the arm's reachable envelope, so detections the arm can't physically reach stop triggering stops. The safety zones stop being uniform spheres and start being shaped to what the arm can actually threaten."
+summary: "This part teaches the safety system the arm's reachable envelope, so detections the arm can't physically reach stop triggering stops. The safety zones stop being uniform spheres and start being shaped to what the arm can actually threaten."
 showToc: true
 ---
 
@@ -10,7 +10,7 @@ Every mmWave safety system shipping today — including the enterprise solutions
 
 That's safe. It's also blunt. A person three meters away from an arm with a one-meter reach isn't in danger — the arm can't get there. A fixed-mount sensor can't make that distinction. It doesn't know where the arm is, and it doesn't know what the arm can reach.
 
-Phase 7 makes the system understand the arm's reachable envelope. Detections outside what the arm can physically reach are suppressed before they ever reach the zone logic. The safety zones are no longer uniform spheres — they're shaped to what the arm can actually threaten, and that shape moves with the arm.
+Makes the system understand the arm's reachable envelope. Detections outside what the arm can physically reach are suppressed before they ever reach the zone logic. The safety zones are no longer uniform spheres — they're shaped to what the arm can actually threaten, and that shape moves with the arm.
 
 ## Why this is the differentiator
 
@@ -28,7 +28,7 @@ During bench testing without a real arm, there's no workspace to clip to — so 
 
 ## What this locked
 
-Phase 7 is what locked the sensor mounting decision for the industrial arm — the mount location, orientation, and coverage geometry are all chosen around making the reachable-envelope logic work cleanly. The specific mounting and tuning that make it reliable are what ship with the kit; the approach is what's described here.
+This is what locked the sensor mounting decision for the industrial arm — the mount location, orientation, and coverage geometry are all chosen around making the reachable-envelope logic work cleanly. The specific mounting and tuning that make it reliable are what ship with the kit; the approach is what's described here.
 
 ## Where the pipeline stands
 
