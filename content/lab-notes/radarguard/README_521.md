@@ -1,6 +1,11 @@
-# RadarGuard — mmWave Cobot Safety System
-
-**Real-time human presence detection and collision avoidance for robot arms and mobile robots, powered by mmWave radar.**
+---
+title: "RadarGuard — mmWave Cobot Safety System"
+draft: true
+date: 2026-05-16
+tags: [mmwave, ros2, robotics, safety]
+summary: "Real-time human presence detection and collision avoidance for robot arms and mobile robots, powered by mmWave radar."
+showToc: true
+---
 
 Built by [DNTD Dynamics](https://dntddynamics.com) · Licensed under [BSL 1.1](#license)
 

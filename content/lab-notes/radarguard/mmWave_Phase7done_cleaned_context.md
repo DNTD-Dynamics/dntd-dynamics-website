@@ -1,5 +1,12 @@
-# RadarGuard — mmWave Cobot Safety System
-# Context & Session State
+---
+title: "RadarGuard — mmWave Cobot Safety System"
+draft: true
+date: 2026-05-21
+tags: [mmwave, ros2, robotics, safety]
+summary: "Context & Session State."
+showToc: true
+---
+
 *Last updated: May 21, 2026 (Phase 7 complete, arm build in progress)*
 
 ---
