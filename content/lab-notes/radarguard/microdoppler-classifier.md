@@ -2,15 +2,15 @@
 title: "Micro-doppler classifier — not everything that moves is a person"
 date: 2026-05-20
 tags: [mmwave, ros2, robotics, safety, classifier]
-summary: "Phase 6 adds a layer that tells a walking person apart from a box on a cart before the detection reaches the zone logic — so the system stops crying wolf at harmless objects, without ever being able to miss a real person."
+summary: "This part adds a layer that tells a walking person apart from a box on a cart before the detection reaches the zone logic — so the system stops crying wolf at harmless objects, without ever being able to miss a real person."
 showToc: true
 ---
 
 The background model tells the safety node what's always there. What it doesn't know is what *kind* of thing just appeared where something wasn't before.
 
-A person walking through the workspace and a box being pushed across it look similar at the zone level: both are new, both have range, both can cross a zone boundary. Before Phase 6, both triggered CAUTION and STOP. That's technically safe — but it's also wrong, and a safety system that cries wolf too often is a safety system that gets switched off. Nuisance stops are not a cosmetic problem. They're how a good system ends up disabled on the floor.
+A person walking through the workspace and a box being pushed across it look similar at the zone level: both are new, both have range, both can cross a zone boundary. Before both triggered CAUTION and STOP. That's technically safe — but it's also wrong, and a safety system that cries wolf too often is a safety system that gets switched off. Nuisance stops are not a cosmetic problem. They're how a good system ends up disabled on the floor.
 
-Phase 6 adds a discrimination layer between background filtering and zone classification. New returns get grouped, and each group is labeled as a person, an object, or unknown. Only the ones that could be a person reach the zone logic.
+This adds a discrimination layer between background filtering and zone classification. New returns get grouped, and each group is labeled as a person, an object, or unknown. Only the ones that could be a person reach the zone logic.
 
 ## The one rule that makes it safe
 
