@@ -1,6 +1,6 @@
 ---
 title: "Micro-doppler classifier — not everything that moves is a person"
-date: 2026-05-21
+date: 2026-05-20
 tags: [mmwave, ros2, robotics, safety, classifier]
 summary: "Phase 6 adds a layer that tells a walking person apart from a box on a cart before the detection reaches the zone logic — so the system stops crying wolf at harmless objects, without ever being able to miss a real person."
 showToc: true
