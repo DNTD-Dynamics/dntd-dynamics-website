@@ -16,7 +16,7 @@ showToc: false
 <p class="preorder-note"> Domestic orders only · Evaluation board for development use (FCC cert coming) · You are charged at time of order · Ship date Q3 2026 (conservative estimate)</p>
 
 <!-- REPLACE THIS HREF WITH YOUR STRIPE PAYMENT LINK BEFORE GOING LIVE -->
-<a href="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK" class="button">
+<a href="https://buy.stripe.com/8x228r3zp4JpfwK3bues000" class="button">
   Pre-order now →
 </a>
 
