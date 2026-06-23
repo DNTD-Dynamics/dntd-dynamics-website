@@ -87,7 +87,7 @@ The stack is ready for a real arm. The immediate next steps:
 
 - Fix the topic remap in `dntd_mmwave_launch.py` so it doesn't need to be specified manually at startup
 - Push everything to Gitea before the Jetson SD card has an opinion about it
-- Order a cheap 6-DOF arm — the kinematic chain needs real DH parameters to validate ego-motion compensation properly
+- Mount on a 6-DOF arm — the kinematic chain needs real DH parameters to validate ego-motion compensation properly
 - Begin micro-doppler classifier research — person vs. object discrimination, TI range-doppler matrix dataset
 
-The demo video becomes possible once the arm is connected and the remap is fixed. That's the next gate.
+The testing data becomes possible once the arm is connected and the remap is fixed.
