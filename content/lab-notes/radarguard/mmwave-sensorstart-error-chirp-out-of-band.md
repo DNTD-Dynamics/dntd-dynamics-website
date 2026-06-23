@@ -50,4 +50,4 @@ endFreq = startFreq + (freqSlopeConst_MHz_us * rampEndTime_us / 1000)
 
 For the IWR6843AOP: `endFreq` must be ≤ 64.0 GHz. If it's over, sensorStart will silently fail with `Error -1` every time, regardless of calibration status.
 
-The TI E2E forums have multiple threads about this exact error. The answer is buried in replies. Saving you the search.
+The TI E2E forums have multiple threads about this exact error. The specific answer is down in replies but this saves you fron having to go search for it.¹
