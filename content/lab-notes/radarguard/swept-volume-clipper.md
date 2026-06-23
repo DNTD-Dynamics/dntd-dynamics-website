@@ -10,7 +10,7 @@ Every mmWave safety system shipping today — including the enterprise solutions
 
 That's safe. It's also blunt. A person three meters away from an arm with a one-meter reach isn't in danger — the arm can't get there. A fixed-mount sensor can't make that distinction. It doesn't know where the arm is, and it doesn't know what the arm can reach.
 
-Makes the system understand the arm's reachable envelope. Detections outside what the arm can physically reach are suppressed before they ever reach the zone logic. The safety zones are no longer uniform spheres — they're shaped to what the arm can actually threaten, and that shape moves with the arm.
+This next step makes the system understand the arm's reachable envelope. Detections outside what the arm can physically reach are suppressed before they ever reach the zone logic. The safety zones are no longer uniform spheres — they're shaped to what the arm can actually threaten, and that shape moves with the arm.
 
 ## Why this is the differentiator
 
@@ -18,7 +18,7 @@ The whole premise of an arm-mounted sensor is that it knows things a fixed senso
 
 Reachability is direction-dependent, and that's the part a fixed sphere can't capture. A person standing directly in front of the arm at full extension is in danger. The same person standing behind the base, at the same distance, is not reachable at all. A uniform zone around a fixed sensor treats those two identically. A system that knows the arm's pose doesn't — it can tighten where the arm can strike and relax where it can't, continuously, as the arm moves.
 
-That's the entire reason RadarGuard mounts on the arm instead of the wall. Phase 7 is where that reason became real behavior instead of a design intention.
+That's the entire reason RadarGuard mounts on the arm instead of the wall. This session is where that reason became real behavior instead of a design intention.
 
 ## Fail-safe by design
 
@@ -34,7 +34,7 @@ This is what locked the sensor mounting decision for the industrial arm — the 
 
 The safety node now runs the full chain end to end: ego-motion compensation, background filtering, clustering, person/object discrimination, reachable-envelope enforcement, and zone classification, out to the serial, GPIO, and MQTT outputs that drive a real arm.
 
-The arm is printing. When it's assembled, the real link geometry goes into the configuration and the reachable-envelope shaping becomes physical instead of theoretical. The demo video becomes possible after that.
+When the arm is fully assembled, the real link geometry goes into the configuration and the reachable-envelope shaping becomes physical instead of theoretical. A full working demo video will follow.
 
 ---
 
