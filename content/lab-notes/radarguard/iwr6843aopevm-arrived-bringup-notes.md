@@ -6,7 +6,7 @@ summary: "EVM in hand, USB detection working immediately. mmWave Studio looked l
 showToc: true
 ---
 
-The IWR6843AOPEVM arrived from DigiKey. $178.80. Smaller than expected — the antenna array is the whole top face of the board, which is the point.
+The IWR6843AOPEVM arrived. Smaller than expected — the antenna array sits out on a small arm off the main board.
 
 ## USB detection — immediate
 
@@ -59,7 +59,7 @@ Always power-cycle after changing switches. The SOP mode is latched at boot.
 
 ## The mmWave Studio trap
 
-mmWave Studio is TI's GUI tool for the mmWave EVM family. It's the obvious first thing to try. Don't.
+mmWave Studio is TI's GUI tool for the mmWave EVM family. It's the obvious first thing to try. However, if you only have the EVM, its not going to connect to your board.
 
 mmWave Studio requires the **MMWAVEICBOOST carrier board** for full functionality at an additional cost. The BOOST board has FTDI GPIO lines that Studio uses to control the SOP pins and issue hardware resets in software. The IWR6843AOPEVM standalone board doesn't have this, so Studio always fails at `Calling_ConnectTarget`.
 
@@ -69,6 +69,6 @@ For the standalone AOP EVM: **use UniFlash for flashing, use Python serial for e
 
 ## What actually works
 
-UniFlash flashing the correct AOP firmware. Python `pyserial` for sending config and reading data. That combination works completely and doesn't require any TI GUI software after the initial flash.
+UniFlash flashing the correct AOP firmware. Python `pyserial` for sending config and reading data. That combination works completely and doesn't require any GUI software after the initial flash.
 
 Next post covers the two bugs that kept the sensor from streaming after the firmware was correct.
