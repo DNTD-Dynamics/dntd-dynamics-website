@@ -16,7 +16,7 @@ The 16 bytes is an ackPing — the firmware's way of saying "I heard you start t
 
 When you flash ISK firmware onto an AOP board, the internal angle-of-arrival tables don't match the physical antenna positions. The sensor boots, accepts config, starts — and then the DSP can't reconcile the geometry, so the data port produces nothing useful.
 
-TI doesn't make this obvious in the SDK directory structure. The `xwr68xx/mmw/` folder contains ISK firmware. The AOP firmware lives in the OOB demo folder: `xwr68xx/out_of_box_6843_aop/`.
+This isn't obvious in the SDK directory structure. The `xwr68xx/mmw/` folder contains ISK firmware. The AOP firmware lives in the OOB demo folder: `xwr68xx/out_of_box_6843_aop/`.
 
 ## The fix
 
