@@ -32,7 +32,17 @@ Long-term role: the OS layer bundled with the sensing middleware. Sterling manag
 
 ---
 
-## 03 — Project Lumina <span class="badge badge-poc">POC</span>
+## 03 — MyceliumVision <span class="badge badge-dev">Dev</span>
+
+ML contamination detection for mushroom cultivation. PyTorch + OpenCV on NucBox K6. SQLite for logging. Primary subject: Lion's Mane (*Hericium erinaceus*).
+
+Motivating application for the genetics research thread — contamination detection in cultivation generates the biological observations that quantum chemistry simulation eventually investigates at the molecular level.
+
+[→ Lab notes tagged mycology](/tags/mycology/)
+
+---
+
+## 04 — Project Lumina <span class="badge badge-poc">POC</span>
 
 There's a display project in progress. The goal is a compact, 
 self-contained volumetric display — the kind of thing that makes 
@@ -44,16 +54,6 @@ measure. The full architecture isn't something we're ready to publish yet.
 More when it's further along.
 
 [→ Lab notes tagged lumina](/tags/lumina/)
-
----
-
-## 04 — MyceliumVision <span class="badge badge-dev">Dev</span>
-
-ML contamination detection for mushroom cultivation. PyTorch + OpenCV on NucBox K6. SQLite for logging. Primary subject: Lion's Mane (*Hericium erinaceus*).
-
-Motivating application for the genetics research thread — contamination detection in cultivation generates the biological observations that quantum chemistry simulation eventually investigates at the molecular level.
-
-[→ Lab notes tagged mycology](/tags/mycology/)
 
 ---
 
