@@ -1,6 +1,14 @@
-# RadarGuard — Store
+---
+title: "Store"
+description: "RadarGuard mmWave safety for robot arms and mobile robots — commercial license, production hardware, and builder support."
+url: /store/
+layout: page
+showToc: false
+---
 
-**mmWave safety for robot arms and mobile robots. Source-available code, deployable hardware, and the license to run it commercially.**
+## RadarGuard — mmWave safety for robot arms and mobile robots
+
+Source-available code, deployable hardware, and the license to run it commercially.
 
 The full RadarGuard pipeline is public on [GitHub](https://github.com/DNTD-Dynamics/RadarGuard-mmwave-cobot-safety-system) and free for research, education, and personal projects. What's sold here is the path to production: the commercial license, the production-validated tuning, and purpose-built hardware.
 
@@ -8,9 +16,17 @@ The full RadarGuard pipeline is public on [GitHub](https://github.com/DNTD-Dynam
 
 ## Deploy now — RadarGuard Commercial License
 
-**$349 · per deployed system · introductory pricing for the first production run**
+<span class="badge badge-dev">Introductory pricing — first production run</span>
 
-For teams ready to run RadarGuard commercially on hardware they already have. Works with the standard TI IWR6843AOPEVM (available from TI and distributors) on any Ubuntu 22.04 host.
+<div class="preorder-box">
+
+<div class="preorder-price">$349</div>
+<p class="preorder-note">Per deployed system · works with the standard TI IWR6843AOPEVM on any Ubuntu 22.04 host</p>
+
+<!-- REPLACE THIS HREF WITH YOUR STRIPE PAYMENT LINK BEFORE GOING LIVE -->
+<a href="#" class="button">Buy the license →</a>
+
+</div>
 
 **Includes:**
 
@@ -19,9 +35,10 @@ For teams ready to run RadarGuard commercially on hardware they already have. Wo
 - **Private repo access** — production configs, deployment notes, and updates ahead of the public repo
 - **Direct builder support** — 90 days of priority email support from the engineer who built and validated the system
 
-**[Buy the license →]** *(Stripe link)*
+**Scaling past a pilot?** The **5-system pack is $1,395** — five deployment licenses, one support relationship, one invoice.
 
-**Scaling past a pilot?** The **5-system pack is $1,395** — five deployment licenses, one support relationship, one invoice. **[Buy the 5-pack →]** *(Stripe link)*
+<!-- REPLACE THIS HREF WITH YOUR STRIPE PAYMENT LINK BEFORE GOING LIVE -->
+<a href="#" class="button">Buy the 5-pack →</a>
 
 **Building RadarGuard into a product you sell?** OEM and integrator licensing is a conversation, not a checkout — **info@dntddynamics.com**.
 
@@ -29,7 +46,16 @@ For teams ready to run RadarGuard commercially on hardware they already have. Wo
 
 ## Pre-order — The RadarGuard Board
 
-**$99 refundable deposit · $449 total, balance charged at ship · estimated ship Q4 2026**
+<span class="badge badge-dev">Pre-order open — estimated ship Q4 2026</span>
+
+<div class="preorder-box">
+
+<div class="preorder-price">$99 deposit</div>
+<p class="preorder-note">$449 total · balance ($350) charged only at ship · deposit refundable in full, any time, any reason</p>
+
+<a href="https://buy.stripe.com/8x228r3zp4JpfwK3bues000" class="button">Reserve a board →</a>
+
+</div>
 
 A DNTD-designed sensor board built for deployment rather than evaluation: compact, integration-ready, made to mount on an arm or AMR and disappear into your build. The board design is being finalized now — pre-order volume directly shapes the first production run.
 
@@ -41,13 +67,6 @@ A DNTD-designed sensor board built for deployment rather than evaluation: compac
 - Private repo access
 - 90 days of priority builder support
 
-**How the deposit works:** $99 today reserves your board and your place in the first run. The balance ($350) is charged only when your board is ready to ship — never before. Deposits are **refundable in full, at any time, for any reason.** Q4 2026 is an estimate, not a promise; if the schedule moves, you'll hear it from me directly and your deposit keeps its place or comes back, your choice.
-
-**[Reserve a board →]** *(Stripe link — $99 deposit)*
-<a href="https://buy.stripe.com/8x228r3zp4JpfwK3bues000" class="button">
-  Pre-order now →
-</a>
-
 > **Development kit notice:** The RadarGuard board is sold for evaluation and development use by design professionals and businesses. This device has not been authorized as required by the rules of the Federal Communications Commission and is not offered for sale for consumer use. An FCC-certified production module is on the roadmap.
 
 ---
@@ -56,15 +75,15 @@ A DNTD-designed sensor board built for deployment rather than evaluation: compac
 
 Just exploring? Clone the repo and run the full pipeline on a TI evaluation module — zone detection, static-person hold, the ROS 2 safety node, all of it. Free for non-commercial use under BSL 1.1, forever. When you're ready to deploy commercially, the license above is the upgrade path.
 
-**[RadarGuard on GitHub →]**
+<a href="https://github.com/DNTD-Dynamics/RadarGuard-mmwave-cobot-safety-system" class="button">RadarGuard on GitHub →</a>
 
 ---
 
 ## Mobile & battery-powered variant
 
-A low-power variant for mobile robots and battery-powered platforms is planned. Join the waitlist to hear when it's real:
+A low-power variant for mobile robots and battery-powered platforms is planned.
 
-**[Join the waitlist →]**
+{{< email-signup label="Join the waitlist — no spam, just ship updates and new kit announcements." button="Join the waitlist" >}}
 
 ---
 
@@ -94,3 +113,5 @@ Yes — the demo video, the lab notes, and the full source. That's the point of 
 ---
 
 *Questions before buying? **info@dntddynamics.com** — you'll get the founder, because there's no one else here yet. That's a feature.*
+
+For return and refund policy, see [Returns](/returns/). For full terms, see [Terms of Service](/terms/).
