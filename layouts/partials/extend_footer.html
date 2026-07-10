@@ -1,37 +1,77 @@
 <!--
   DNTD Dynamics — honeycomb signal traces
   ==========================================
-  Five short line-paths angled to the same 60°-multiples as the
-  hex grid in honeycomb-bg.css, so the light pulses read as
-  travelling along lattice lines. Two fast, three slow.
+  Each trace follows REAL edges of the actual rendered hex grid —
+  not approximate coordinates. The grid (honeycomb-bg.css) tiles
+  from the viewport's top-left corner with hexagon radius r=100px
+  (base SVG r=40 × background-size scale 2.5x). Hexagon centers
+  fall at:
+    "corner" hexagons:  (300*i,        173.205*j)
+    "middle" hexagons:  (300*i + 150,  173.205*j + 86.6025)
+  for any integers i, j — this is exactly how CSS background-repeat
+  tiles the pattern. Each trace path below walks 2–3 consecutive
+  edges of one specific real hexagon at one of those centers, so
+  it sits precisely on the visible grid lines.
 
-  Styling and the shared @keyframes live in
-  assets/css/extended/honeycomb-bg.css — this file only defines
-  the geometry and each path's own speed/length.
+  The canvas below is sized 2560x1440 in REAL pixels (viewBox and
+  width/height match exactly — no stretching), anchored to the same
+  top-left origin the CSS grid uses, so 1 unit here = 1 real pixel
+  on screen. On screens wider than 2560px the traces simply don't
+  reach the far edge — the base grid still tiles fine there, it
+  just won't have a trace running through it.
 
-  Coordinates are in a 1600x900 viewBox that scales to fill any
-  viewport (preserveAspectRatio="xMidYMid slice"), so it doesn't
-  need to be pixel-registered to the tiled background grid —
-  matching angles is what sells the effect, not exact alignment.
+  Desktop only — mobile's grid uses a different scale (r=60) and
+  is hidden via CSS rather than maintaining a second coordinate set.
 
-  To add or remove a trace: copy a <path> block, adjust the "d"
-  coordinates (keep segments at 0/60/120/180/240/300 degree
-  headings to stay grid-aligned), set --dash-end to
-  -(path length + 30), and set animation-duration.
+  Each trace is one <path> (the bright head) plus three <use> copies
+  of it styled as a fading trail via CSS (see honeycomb-traces
+  classes in honeycomb-bg.css). --duration and --dash-end are set
+  per trace on the <g> and inherited by all four copies.
+
+  To add a trace: pick real hexagon vertices from the formula above,
+  walk 2–4 consecutive edges (100px each), set --dash-end to
+  -(total length + 14), pick a --duration.
 -->
-<svg class="honeycomb-traces" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-  <!-- fast trace 1 — length 300, duration 6s -->
-  <path d="M 150,150 L 250,150 L 300,236.6 L 400,236.6" style="--dash-end:-330; animation-duration:6s;" />
+<svg class="honeycomb-traces" viewBox="0 0 2560 1440" width="2560" height="1440" aria-hidden="true" focusable="false">
 
-  <!-- fast trace 2 — length 200, duration 7s -->
-  <path d="M 1300,700 L 1200,700 L 1150,613.4" style="--dash-end:-230; animation-duration:7s;" />
+  <!-- Trace 1 (fast, 6s) — corner hex at (600,173.205), edges V4-V5-V0 -->
+  <g style="--duration:6s; --dash-end:-214;">
+    <path id="trace1" class="trace-path trace-head" d="M 550,86.6025 L 650,86.6025 L 700,173.205" />
+    <use href="#trace1" class="trace-path trace-echo-1" />
+    <use href="#trace1" class="trace-path trace-echo-2" />
+    <use href="#trace1" class="trace-path trace-echo-3" />
+  </g>
 
-  <!-- slow trace 1 — length 400, duration 28s -->
-  <path d="M 900,120 L 950,206.6 L 1050,206.6 L 1100,293.2 L 1200,293.2" style="--dash-end:-430; animation-duration:28s;" />
+  <!-- Trace 2 (fast, 7s) — corner hex at (2100,519.615), edges V1-V2-V3 -->
+  <g style="--duration:7s; --dash-end:-214;">
+    <path id="trace2" class="trace-path trace-head" d="M 2150,606.2175 L 2050,606.2175 L 2000,519.615" />
+    <use href="#trace2" class="trace-path trace-echo-1" />
+    <use href="#trace2" class="trace-path trace-echo-2" />
+    <use href="#trace2" class="trace-path trace-echo-3" />
+  </g>
 
-  <!-- slow trace 2 — length 300, duration 34s -->
-  <path d="M 250,700 L 300,613.4 L 400,613.4 L 450,526.8" style="--dash-end:-330; animation-duration:34s;" />
+  <!-- Trace 3 (slow, 28s) — middle hex at (1050,433.0125), edges V5-V0-V1-V2 -->
+  <g style="--duration:28s; --dash-end:-314;">
+    <path id="trace3" class="trace-path trace-head" d="M 1100,346.41 L 1150,433.0125 L 1100,519.615 L 1000,519.615" />
+    <use href="#trace3" class="trace-path trace-echo-1" />
+    <use href="#trace3" class="trace-path trace-echo-2" />
+    <use href="#trace3" class="trace-path trace-echo-3" />
+  </g>
 
-  <!-- slow trace 3 — length 300, duration 40s -->
-  <path d="M 1350,300 L 1300,386.6 L 1200,386.6 L 1150,473.2" style="--dash-end:-330; animation-duration:40s;" />
+  <!-- Trace 4 (slow, 34s) — corner hex at (300,866.025), edges V3-V4-V5-V0 -->
+  <g style="--duration:34s; --dash-end:-314;">
+    <path id="trace4" class="trace-path trace-head" d="M 200,866.025 L 250,779.4225 L 350,779.4225 L 400,866.025" />
+    <use href="#trace4" class="trace-path trace-echo-1" />
+    <use href="#trace4" class="trace-path trace-echo-2" />
+    <use href="#trace4" class="trace-path trace-echo-3" />
+  </g>
+
+  <!-- Trace 5 (slow, 40s) — middle hex at (1950,259.8075), edges V4-V5-V0-V1 -->
+  <g style="--duration:40s; --dash-end:-314;">
+    <path id="trace5" class="trace-path trace-head" d="M 1900,173.205 L 2000,173.205 L 2050,259.8075 L 2000,346.41" />
+    <use href="#trace5" class="trace-path trace-echo-1" />
+    <use href="#trace5" class="trace-path trace-echo-2" />
+    <use href="#trace5" class="trace-path trace-echo-3" />
+  </g>
+
 </svg>

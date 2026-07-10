@@ -5,22 +5,23 @@
    the geometry of a phased-array antenna lattice (mmWave/RF) and
    the honeycomb efficiency in the mycology/ecology work.
 
-   A handful of small blue light pulses travel along a few of the
-   lattice lines, like signal traces / neuron pulses — some slow,
-   some fast. This replaces the earlier rotation experiment: a
-   spinning grid and fixed-path traces would slowly drift out of
-   alignment with each other, so the grid stays static and the
-   traces carry all the motion instead.
+   A handful of small blue light pulses travel along REAL edges of
+   the lattice (see extend_footer.html) — a bright head with a
+   short fading trail behind it, like signal traces / neuron pulses.
+   Some slow, some fast.
+
+   ALIGNMENT: the background grid tiles from the viewport's top-left
+   corner (CSS background-position defaults to 0 0), hexagon radius
+   r=100px on desktop (base SVG r=40 x background-size scale 2.5).
+   The trace SVG in extend_footer.html uses that exact same origin
+   and scale — its viewBox is sized 1:1 with real CSS pixels (no
+   stretching), so its path coordinates land exactly on the grid's
+   own hexagon vertices instead of floating independently.
 
    Drop this file in: assets/css/extended/honeycomb-bg.css
-   PaperMod auto-bundles everything in assets/css/extended/ —
-   no template edits needed for THIS file.
-
-   The trace lines themselves live in layouts/partials/extend_footer.html
-   (see that file) — this CSS just styles and animates them.
-
-   Scoped to dark mode only. Covers both html.dark and body.dark
-   since PaperMod's dark-mode class placement varies by version.
+   PaperMod auto-bundles everything in assets/css/extended/.
+   Scoped to dark mode only (covers html.dark and body.dark, since
+   PaperMod's dark-class placement varies by version).
    ============================================================ */
 
 :root {
@@ -30,15 +31,15 @@
   --hex-tile-h-mobile: 103.923px;
   --hex-bg: #14130f;
   --trace-blue: #4fa8e0;
-  --trace-blue-glow: rgba(79, 168, 224, 0.65);
+  --trace-blue-glow: rgba(79, 168, 224, 0.75);
+  --trace-white-core: rgba(255, 255, 255, 0.9);
 }
 
 html.dark body,
 body.dark {
-  /* !important is deliberate here: PaperMod applies its own
-     background via layout-specific class combos (.dark.list,
-     likely .dark.single, .dark.archive, etc. on other templates)
-     that out-specificity a plain body.dark selector. */
+  /* !important is deliberate: PaperMod's own layout-class combos
+     (.dark.list, likely .dark.single, .dark.archive, etc.) out-
+     specificity a plain body.dark selector on other templates. */
   background-color: var(--hex-bg) !important;
   position: relative;
 }
@@ -52,7 +53,7 @@ body.dark::before {
   background-repeat: repeat;
   background-size: var(--hex-tile-w) var(--hex-tile-h);
   pointer-events: none;
-  z-index: -2; /* base grid, below the trace layer, above the solid color */
+  z-index: -2;
 }
 
 @media (max-width: 768px) {
@@ -63,18 +64,18 @@ body.dark::before {
 }
 
 /* ---- Signal traces ----
-   The <svg class="honeycomb-traces"> lives in extend_footer.html.
-   Hidden outside dark mode; positioned as its own fixed full-bleed
-   layer just above the static grid. */
+   Markup lives in extend_footer.html. Fixed 1:1 pixel canvas
+   (no viewBox stretching) so path coordinates land exactly on
+   real grid vertices. Hidden outside dark mode and on mobile
+   (mobile's grid uses a different scale — see note in the HTML). */
 
 .honeycomb-traces {
   display: none;
   position: fixed;
   inset: 0;
-  width: 100%;
-  height: 100%;
   pointer-events: none;
   z-index: -1;
+  overflow: hidden;
 }
 
 html.dark .honeycomb-traces,
@@ -82,19 +83,50 @@ body.dark .honeycomb-traces {
   display: block;
 }
 
-.honeycomb-traces path {
+@media (max-width: 768px) {
+  html.dark .honeycomb-traces,
+  body.dark .honeycomb-traces {
+    display: none;
+  }
+}
+
+.honeycomb-traces .trace-path {
   fill: none;
   stroke: var(--trace-blue);
-  stroke-width: 2.5;
   stroke-linecap: round;
-  stroke-dasharray: 30 3000; /* one short glowing dash, huge gap so only one is ever visible */
-  filter: drop-shadow(0 0 4px var(--trace-blue-glow));
-  opacity: 0.85;
+  stroke-dasharray: 14 3000; /* one short dash, huge gap — only one visible per pass */
   animation-name: trace-pulse;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  /* each <path> sets its own --dash-end and animation-duration inline,
-     since path length differs per trace — see extend_footer.html */
+  animation-duration: var(--duration);
+}
+
+/* Bright pinpoint head — white-hot core, blue halo */
+.honeycomb-traces .trace-head {
+  stroke-width: 3;
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 2px var(--trace-white-core))
+    drop-shadow(0 0 6px var(--trace-blue-glow));
+}
+
+/* Fading trail — three echoes of the same path, each a small
+   fixed % of that trace's own duration behind the head, so the
+   trail length stays proportionate whether the trace is fast or slow */
+.honeycomb-traces .trace-echo-1 {
+  stroke-width: 2.3;
+  opacity: 0.4;
+  animation-delay: calc(var(--duration) * -0.02);
+}
+.honeycomb-traces .trace-echo-2 {
+  stroke-width: 1.6;
+  opacity: 0.18;
+  animation-delay: calc(var(--duration) * -0.04);
+}
+.honeycomb-traces .trace-echo-3 {
+  stroke-width: 1;
+  opacity: 0.07;
+  animation-delay: calc(var(--duration) * -0.06);
 }
 
 @keyframes trace-pulse {
@@ -103,8 +135,8 @@ body.dark .honeycomb-traces {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .honeycomb-traces path {
+  .honeycomb-traces .trace-path {
     animation: none;
-    opacity: 0; /* a static blue dash sitting mid-line reads as a UI glitch, not atmosphere */
+    opacity: 0; /* a static dash sitting mid-line reads as a glitch, not atmosphere */
   }
 }
