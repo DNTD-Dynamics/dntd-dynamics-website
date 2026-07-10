@@ -27,7 +27,18 @@ mmWave safety perception for robot arms and mobile robots. No camera, no lidar �
 
 <div class="workshop-card">
 
-{{< figure src="/images/workshop/workshop-mycelium-placeholder.jpg" alt="Mycelium cultivation contamination detection" >}}
+
+### Project Sterling AI
+<span class="badge badge-poc">POC</span>
+
+Local AI runtime for the homelab and eventually the sensing platform. Mistral 7B/14B via Ollama, ChromaDB RAG for long-term memory, hybrid intent router. SQLite for action logging.
+
+[→ Lab notes tagged lumina](/tags/sterling/)
+
+</div>
+
+<div class="workshop-card">
+
 
 ### MyceliumVision
 <span class="badge badge-dev">In development</span>
@@ -37,20 +48,6 @@ ML-based contamination detection for mushroom cultivation. Lion's Mane as the pr
 [→ Lab notes tagged mycology](/tags/mycology/)
 
 </div>
-
-<div class="workshop-card">
-
-{{< figure src="/images/workshop/workshop-lumina-placeholder.jpg" alt="Project Lumina volumetric display" >}}
-
-### Project Lumina
-<span class="badge badge-poc">POC</span>
-
-A compact, self-contained volumetric display. Early results are promising and strange in equal measure — full writeup coming once the architecture is further along.
-
-[→ Lab notes tagged lumina](/tags/lumina/)
-
-</div>
-
 </div>
 
 ---
