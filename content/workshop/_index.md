@@ -27,27 +27,26 @@ mmWave safety perception for robot arms and mobile robots. No camera, no lidar �
 
 <div class="workshop-card">
 
-
-### Project Sterling AI
+### Sterling AI
 <span class="badge badge-active">Active</span>
 
-Local AI runtime for the homelab and eventually the sensing platform. Mistral 7B/14B via Ollama, ChromaDB RAG for long-term memory, hybrid intent router. SQLite for action logging.
+Local AI runtime for the homelab and eventually the sensing platform. Mistral 7B via Ollama, ChromaDB RAG for long-term memory, hybrid intent router. SQLite for action logging.
 
-[→ Lab notes tagged lumina](/tags/sterling/)
+[→ Lab notes tagged sterling](/tags/sterling/)
 
 </div>
 
 <div class="workshop-card">
-
 
 ### MyceliumVision
 <span class="badge badge-dev">In development</span>
 
 ML-based contamination detection for mushroom cultivation. Lion's Mane as the primary subject, PyTorch + OpenCV on the bench.
 
-[→ Lab notes tagged mycology](/tags/mycology/)
+[→ Explore MyceliumVision](/workshop/mycelium/)
 
 </div>
+
 </div>
 
 ---
