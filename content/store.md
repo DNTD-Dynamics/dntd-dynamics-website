@@ -1,20 +1,20 @@
 ---
 title: "Store"
-description: "RadarGuard mmWave safety for robot arms and mobile robots — commercial license, production hardware, and builder support."
+description: "ForeForce mmWave safety for robot arms and mobile robots — commercial license, production hardware, and builder support."
 url: /store/
 layout: page
 showToc: false
 ---
 
-## RadarGuard — mmWave safety for robot arms and mobile robots
+## ForeForce — mmWave safety for robot arms and mobile robots
 
 Source-available code, deployable hardware, and the license to run it commercially.
 
-The full RadarGuard pipeline is public on [GitHub](https://github.com/DNTD-Dynamics/RadarGuard-mmwave-cobot-safety-system) and free for research, education, and personal projects. What's sold here is the path to production: the commercial license, the production-validated tuning, and purpose-built hardware.
+The full ForeForce pipeline is public on [GitHub](https://github.com/DNTD-Dynamics/ForeForce-mmwave-cobot-safety-system) and free for research, education, and personal projects. What's sold here is the path to production: the commercial license, the production-validated tuning, and purpose-built hardware.
 
 ---
 
-## Deploy now — RadarGuard Commercial License
+## Deploy now — ForeForce Commercial License
 
 <span class="badge badge-dev">Introductory pricing — first production run</span>
 
@@ -23,8 +23,11 @@ The full RadarGuard pipeline is public on [GitHub](https://github.com/DNTD-Dynam
 <div class="preorder-price">$349</div>
 <p class="preorder-note">Per deployed system · works with the standard TI IWR6843AOPEVM on any Ubuntu 22.04 host</p>
 
-<!-- REPLACE THIS HREF WITH YOUR STRIPE PAYMENT LINK BEFORE GOING LIVE -->
-<a href="#" class="button">Buy the license →</a>
+<span class="badge badge-dev">Pending TI legal clearance — opens soon</span>
+
+<p style="font-size:14px;margin-top:0.75rem;">
+  Licensing isn't open yet. Email <a href="mailto:info@dntddynamics.com?subject=Notify me — ForeForce license">info@dntddynamics.com</a> to be first in line when it does.
+</p>
 
 </div>
 
@@ -37,14 +40,13 @@ The full RadarGuard pipeline is public on [GitHub](https://github.com/DNTD-Dynam
 
 **Scaling past a pilot?** The **5-system pack is $1,395** — five deployment licenses, one support relationship, one invoice.
 
-<!-- REPLACE THIS HREF WITH YOUR STRIPE PAYMENT LINK BEFORE GOING LIVE -->
-<a href="#" class="button">Buy the 5-pack →</a>
+<span class="badge badge-dev">Pending TI legal clearance</span> · <a href="mailto:info@dntddynamics.com?subject=Notify me — ForeForce 5-pack">Email me when this opens →</a>
 
-**Building RadarGuard into a product you sell?** OEM and integrator licensing is a conversation, not a checkout — **info@dntddynamics.com**.
+**Building ForeForce into a product you sell?** OEM and integrator licensing is a conversation, not a checkout — **info@dntddynamics.com**.
 
 ---
 
-## Pre-order — The RadarGuard Board
+## Pre-order — The ForeForce Board
 
 <span class="badge badge-dev">Pre-order open — estimated ship Q4 2026</span>
 
@@ -61,13 +63,13 @@ A DNTD-designed sensor board built for deployment rather than evaluation: compac
 
 **Every board ships with:**
 
-- The RadarGuard board — DNTD-designed mmWave sensor hardware
+- The ForeForce board — DNTD-designed mmWave sensor hardware
 - **Commercial deployment license included** (one deployed system — a $349 value)
 - Production radar configuration, pre-loaded
 - Private repo access
 - 90 days of priority builder support
 
-> **Development kit notice:** The RadarGuard board is sold for evaluation and development use by design professionals and businesses. This device has not been authorized as required by the rules of the Federal Communications Commission and is not offered for sale for consumer use. An FCC-certified production module is on the roadmap.
+> **Development kit notice:** The ForeForce board is sold for evaluation and development use by design professionals and businesses. This device has not been authorized as required by the rules of the Federal Communications Commission and is not offered for sale for consumer use. An FCC-certified production module is on the roadmap.
 
 ---
 
@@ -75,7 +77,7 @@ A DNTD-designed sensor board built for deployment rather than evaluation: compac
 
 Just exploring? Clone the repo and run the full pipeline on a TI evaluation module — zone detection, static-person hold, the ROS 2 safety node, all of it. Free for non-commercial use under BSL 1.1, forever. When you're ready to deploy commercially, the license above is the upgrade path.
 
-<a href="https://github.com/DNTD-Dynamics/RadarGuard-mmwave-cobot-safety-system" class="button">RadarGuard on GitHub →</a>
+<a href="https://github.com/DNTD-Dynamics/ForeForce-mmwave-cobot-safety-system" class="button">ForeForce on GitHub →</a>
 
 ---
 
@@ -93,7 +95,7 @@ A low-power variant for mobile robots and battery-powered platforms is planned.
 The code shows you *how it works*. The license lets you *deploy it commercially* (the BSL requires one), and the production configuration is the part that took months of live validation to get right: the public example profile is deliberately conservative. Compare the alternative — months of an engineer's time re-deriving the same tuning and chasing the same dead ends — and the license is the cheapest line item in your deployment. You're buying a validated, deployable, supported system, and a builder who answers email.
 
 **What counts as "one deployed system"?**
-One robot or workcell running RadarGuard in a commercial or production setting. Your dev bench doesn't count against it. Growing past five systems, or embedding RadarGuard in something you sell? Email me — that's the OEM conversation.
+One robot or workcell running ForeForce in a commercial or production setting. Your dev bench doesn't count against it. Growing past five systems, or embedding ForeForce in something you sell? Email me — that's the OEM conversation.
 
 **Why "introductory pricing"?**
 Because this is the first production run, and early buyers are taking a chance on new hardware from a new company. The price will rise as the deployment record grows — but the terms you buy at are yours for that system, permanently. Early is the good end of this deal.
