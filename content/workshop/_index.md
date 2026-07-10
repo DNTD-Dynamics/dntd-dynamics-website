@@ -16,8 +16,6 @@ This isn't a single-product storefront. It's where every active build lives, fro
 
 <div class="workshop-card">
 
-{{< figure src="/images/workshop/workshop-evm.jpg" alt="ForeForce mmWave sensing board" >}}
-
 ### ForeForce
 <span class="badge badge-active">Active — waitlist open</span>
 
