@@ -29,7 +29,7 @@ mmWave safety perception for robot arms and mobile robots. No camera, no lidar â
 
 
 ### Project Sterling AI
-<span class="badge badge-poc">POC</span>
+<span class="badge badge-active">Active</span>
 
 Local AI runtime for the homelab and eventually the sensing platform. Mistral 7B/14B via Ollama, ChromaDB RAG for long-term memory, hybrid intent router. SQLite for action logging.
 
