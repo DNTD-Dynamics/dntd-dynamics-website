@@ -1,48 +1,54 @@
 ---
-title: "Ohm & Iron Workshop"
-description: "Hardware sensing kits for builders, researchers, and robotics developers."
+title: "ForeForce Hardware Kits"
+description: "mmWave sensing kits for robot arms and mobile robots — by DNTD Dynamics."
 url: /workshop/
 layout: page
 showToc: false
 ---
 
-Hardware, software, and simulations for builders who need to sense the world.
+**ForeForce by DNTD Dynamics — mmWave safety perception for robot arms and mobile robots.**
 
-Purpose-built kits with focused integration, open-source firmware, and documentation written by someone who actually debugged the hardware.
+Purpose-built sensing kits with focused integration, source-available software (BSL 1.1), and documentation written by someone who actually debugged the hardware.
 
 ---
 
-## ForeForce mmWave 360° Sensing Kit — IWR6843AOP
+## Industrial — ForeForce Sensing Kit
 
-<span class="badge badge-dev">Pre-order open — ships Q4 2026</span>
+<span class="badge badge-dev">Waitlist open — ships Q4 2026</span>
+
+For fixed installations: robot arms, machine cells, workstations.
 
 The sensor your robot uses when it can't see.
 
-No camera. No lidar. The IWR6843AOP is a 60–64 GHz FMCW radar on a chip — it sees through dust, darkness, and direct occlusion, outputs a 3D point cloud over USB at 10 Hz, and connects to ROS2 in under an hour with the included driver package.
+No camera. No lidar. Built on 60–64 GHz FMCW radar-on-chip (TI IWR6843AOP), the kit senses through dust, darkness, and direct occlusion, outputs a 3D point cloud over USB at 10 Hz, and connects to ROS2 in under an hour with the included driver package.
 
-Built and tested on a Jetson Orin Nano Super. The config file included with the kit is the one actually running on the bench — not a sanitized example from a TI application note.
+Developed and tested on a Jetson Orin Nano Super. Ships with a working, tuned configuration for arm-mounted collision detection — not a sanitized example from an application note.
 
 <div class="preorder-box">
 
-### Pre-order — $349
+### Board — $449
 
-<div class="preorder-price">$349</div>
-<p class="preorder-note">Evaluation board for development use · Charge on order · Ships Q4 2026</p>
+<div class="preorder-price">$99 refundable deposit</div>
+<p class="preorder-note">Balance of $350 invoiced at ship · Deposit refundable anytime · Ships Q4 2026 · Development kit — for design professionals and B2B use</p>
 
-**[→ Pre-order on the store page](/store/)**
+Ordering opens soon. Join the waitlist and you'll be first in line when it does.
+
+{{< email-signup label="Join the waitlist for the Industrial kit" button="Join waitlist" >}}
 
 </div>
 
+Commercial deployments also require a [ForeForce commercial software license](/store/) — one per deployed system. Read, run, learn, and non-commercial use are free under BSL 1.1.
+
 ### What's included
 
-- IWR6843AOPEVM evaluation module
+- DNTD-designed mmWave sensing board (custom PCB built on the TI IWR6843AOP)
 - ROS2 driver package (Python, tested on JetPack 6.2.2)
-- Working config file — tuned for arm-mounted collision detection
+- Working configuration tuned for arm-mounted collision detection
 - Zone detection library with `STOP` / `CAUTION` / `CLEAR` output
 - Getting started guide — written for builders, not datasheets
-- Private repository access for all kit owners
+- Repository access for all kit owners
 
-{{< figure src="/images/workshop/workshop-evm.jpg" alt="IWR6843AOP EVM evaluation module" >}}
+{{< figure src="/images/workshop/workshop-evm.jpg" alt="mmWave development board" >}}
 
 ### Specs
 
@@ -51,14 +57,16 @@ Built and tested on a Jetson Orin Nano Super. The config file included with the 
   <tr><td>Range</td><td>0.1 – 8.9 m</td></tr>
   <tr><td>Field of view</td><td>±90° azimuth / ±40° elevation</td></tr>
   <tr><td>Output</td><td>x/y/z point cloud at 10 Hz via USB</td></tr>
-  <tr><td>Interface</td><td>Dual UART over USB (Silicon Labs CP2105)</td></tr>
+  <tr><td>Interface</td><td>Dual UART over USB</td></tr>
   <tr><td>Power</td><td>5V USB · ~1.2W typical</td></tr>
-  <tr><td>Firmware</td><td>out_of_box_6843_aop — SDK 3.5.x / fw 3.6.0.0</td></tr>
+  <tr><td>Radar SDK</td><td>TI mmWave SDK 3.5.x</td></tr>
   <tr><td>Tested on</td><td>Jetson Orin Nano Super, JetPack 6.2.2</td></tr>
-  <tr><td>Ships as</td><td>Evaluation board — development use only</td></tr>
+  <tr><td>Ships as</td><td>Development kit — development and evaluation use only</td></tr>
 </table>
 
-{{< figure src="/images/workshop/workshop-evm-working.jpg" alt="IWR6843AOP mmWave output" >}}
+<p class="dev-kit-notice">Sold as a development kit for evaluation and design by professionals. Not an FCC-authorized end product. Buyers integrating ForeForce into a deployed system are responsible for conducting a risk assessment and validating conformity per applicable standards (including ISO 10218 / ISO/TS 15066, ANSI/RIA R15.06) in their complete system.</p>
+
+{{< figure src="/images/workshop/workshop-evm-working.jpg" alt="mmWave point cloud output" >}}
 
 ### Why no camera, why not lidar
 
@@ -70,12 +78,14 @@ mmWave radar has no moving parts, works in complete darkness, and doesn't care a
 
 ---
 
-## IWRL6432AOP Mobile Kit — Coming Soon
+## Mobile Robotics — ForeForce Mobile Kit
 
-<span class="badge badge-soon">Out of stock — notify me</span>
+<span class="badge badge-soon">Coming soon — join the list</span>
 
-Lower-power mobile variant of the mmWave kit. Same ROS2 integration, same documentation standard, optimized for standalone robots and mobile platforms where power budget matters.
+For battery-powered platforms: AMRs, mobile robots, anything where power budget matters.
 
-Kits coming soone. Join the list to be notified when available at **$199**.
+Lower-power variant built on the TI IWRL6432AOP. Same ROS2 integration, same documentation standard, optimized for standalone and mobile platforms.
 
-{{< email-signup label="Notify me when the 6432 kit is available" button="Notify me" >}}
+Pricing and availability will be announced to the list first.
+
+{{< email-signup label="Notify me when the Mobile kit is available" button="Notify me" >}}

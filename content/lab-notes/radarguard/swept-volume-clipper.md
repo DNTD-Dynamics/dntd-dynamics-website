@@ -18,9 +18,9 @@ The whole premise of an arm-mounted sensor is that it knows things a fixed senso
 
 Reachability is direction-dependent, and that's the part a fixed sphere can't capture. A person standing directly in front of the arm at full extension is in danger. The same person standing behind the base, at the same distance, is not reachable at all. A uniform zone around a fixed sensor treats those two identically. A system that knows the arm's pose doesn't — it can tighten where the arm can strike and relax where it can't, continuously, as the arm moves.
 
-That's the entire reason RadarGuard mounts on the arm instead of the wall. This session is where that reason became real behavior instead of a design intention.
+That's the entire reason ForeForce mounts on the arm instead of the wall. This session is where that reason became real behavior instead of a design intention.
 
-## Fail-safe by design
+## Designed to fault toward passing detections through
 
 The workspace logic follows the same rule as the rest of the stack: it can only ever *suppress* detections the arm can't reach. It can never suppress a detection the arm *can* reach, and any failure in the reach computation defaults to passing every detection through to the zone logic. The feature can make the system smarter. It can't make it blind.
 

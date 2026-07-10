@@ -1,5 +1,5 @@
 ---
-title: "RadarGuard"
+title: "ForeForce"
 description: "mmWave cobot safety system — build logs from bringup through field testing."
 weight: 10
 ---

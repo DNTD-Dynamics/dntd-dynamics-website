@@ -64,11 +64,11 @@ The background model is doing the work the velocity filter was supposed to do, b
 
 ## Fault architecture
 
-Two fault modes, both fail-safe:
+Two fault modes, both designed to fault toward STOP:
 
 **Fault 1 — joint states timeout.** If `/joint_states` stops publishing (arm controller crash, cable pulled, whatever), the safety node immediately publishes STOP and a fault reason to `/dntd/safety_fault`. The arm can't resume until an explicit `True` is published to `/dntd/safety_resume`. Joint states recovering does not auto-resume — explicit operator acknowledgment required.
 
-**Fault 2 — safety node dies.** The 5Hz heartbeat on `/dntd/heartbeat` stops. The arm controller monitors this and self-stops independently of whatever the safety node was doing. The safety stack failing safe is more important than the safety stack staying up.
+**Fault 2 — safety node dies.** The 5Hz heartbeat on `/dntd/heartbeat` stops. The arm controller monitors this and self-stops independently of whatever the safety node was doing. The safety stack faulting toward STOP is more important than the safety stack staying up.
 
 ## Hysteresis
 
