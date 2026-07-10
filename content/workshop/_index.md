@@ -1,6 +1,6 @@
 ---
-title: "ForeForce Hardware Kits"
-description: "mmWave sensing kits for robot arms and mobile robots — by DNTD Dynamics."
+title: "Ohm and Iron Workshop"
+description: "What's currently being developed in the lab, on the bench or tested in the field — by DNTD Dynamics."
 url: /workshop/
 layout: page
 showToc: false
