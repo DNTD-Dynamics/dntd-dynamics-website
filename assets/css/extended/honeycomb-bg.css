@@ -1,0 +1,65 @@
+/* ============================================================
+   DNTD Dynamics — ambient honeycomb background
+   ============================================================
+   Hex lattice in dark gold, stroke-only, very low opacity.
+   The motif is deliberate, not decorative: it's the geometry of
+   a phased-array antenna lattice (mmWave/RF — the hardware side)
+   and the honeycomb efficiency found in the mycology/ecology
+   work — one shape that speaks to both verticals.
+
+   Drop this file in: assets/css/extended/honeycomb-bg.css
+   PaperMod auto-bundles everything in assets/css/extended/ —
+   no template edits needed.
+
+   Scoped to dark mode only (your site has the theme toggle on).
+   PaperMod's dark-mode class placement varies a bit by version,
+   so this covers the two common cases (html.dark and body.dark).
+   After deploying: toggle to light mode and confirm the pattern
+   disappears. If it doesn't, tell me which element actually gets
+   the .dark class and this is a one-line fix.
+   ============================================================ */
+
+:root {
+  --hex-tile-w: 300px;
+  --hex-tile-h: 173.205px;
+  --hex-tile-w-mobile: 180px;
+  --hex-tile-h-mobile: 103.923px;
+  --hex-bg: #14130f;
+}
+
+html.dark body,
+body.dark {
+  background-color: var(--hex-bg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='69.282'%3E%3Cdefs%3E%3Cpolygon id='h' points='40,0 20,34.641 -20,34.641 -40,0 -20,-34.641 20,-34.641' fill='none' stroke='rgba(191,149,63,0.065)' stroke-width='1'/%3E%3C/defs%3E%3Cuse href='%23h' x='0' y='0'/%3E%3Cuse href='%23h' x='0' y='69.282'/%3E%3Cuse href='%23h' x='60' y='34.641'/%3E%3Cuse href='%23h' x='120' y='0'/%3E%3Cuse href='%23h' x='120' y='69.282'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: var(--hex-tile-w) var(--hex-tile-h);
+  background-attachment: fixed;
+  animation: honeycomb-drift 140s linear infinite;
+}
+
+@keyframes honeycomb-drift {
+  from { background-position: 0 0; }
+  to   { background-position: var(--hex-tile-w) var(--hex-tile-h); }
+}
+
+/* Fixed backgrounds can cause scroll jank on mobile Safari/Chrome —
+   switch to scroll attachment and a smaller tile below the breakpoint. */
+@media (max-width: 768px) {
+  html.dark body,
+  body.dark {
+    background-attachment: scroll;
+    background-size: var(--hex-tile-w-mobile) var(--hex-tile-h-mobile);
+  }
+
+  @keyframes honeycomb-drift {
+    from { background-position: 0 0; }
+    to   { background-position: var(--hex-tile-w-mobile) var(--hex-tile-h-mobile); }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.dark body,
+  body.dark {
+    animation: none;
+  }
+}
