@@ -28,7 +28,7 @@ Running on NucBox K6 (Ryzen 7 7840HS, 32GB DDR5). Wake word detection is the nex
 
 Long-term role: the OS layer bundled with the sensing middleware. Sterling manages sensor pipelines, logs experimental data, runs inference, handles automation. Privacy-first, no cloud dependency required.
 
-[→ Lab notes tagged sterling](/tags/sterling/)
+[→ Workshop page](/workshop/) · [→ Lab notes tagged sterling](/tags/sterling/)
 
 ---
 
@@ -38,7 +38,7 @@ ML contamination detection for mushroom cultivation. PyTorch + OpenCV on NucBox 
 
 Motivating application for the genetics research thread — contamination detection in cultivation generates the biological observations that quantum chemistry simulation eventually investigates at the molecular level.
 
-[→ Lab notes tagged mycology](/tags/mycology/)
+[→ Workshop page](/workshop/) · [→ Lab notes tagged mycology](/tags/mycology/)
 
 ---
 
