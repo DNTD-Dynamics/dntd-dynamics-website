@@ -23,7 +23,7 @@ The full ForeForce pipeline is public on [GitHub](https://github.com/DNTD-Dynami
 <div class="preorder-price">$349</div>
 <p class="preorder-note">Per deployed system · works with the standard TI IWR6843AOPEVM on any Ubuntu 22.04 host</p>
 
-<span class="badge badge-dev">Pending TI legal clearance — opens soon</span>
+<span class="badge badge-dev">Opens soon</span>
 
 <p style="font-size:14px;margin-top:0.75rem;">
   Licensing isn't open yet. Email <a href="mailto:info@dntddynamics.com?subject=Notify me — ForeForce license">info@dntddynamics.com</a> to be first in line when it does.
