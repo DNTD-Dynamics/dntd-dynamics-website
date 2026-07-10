@@ -12,9 +12,9 @@ Purpose-built kits with focused integration, open-source firmware, and documenta
 
 ---
 
-## mmWave 360° Sensing Kit — IWR6843AOP
+## ForeForce mmWave 360° Sensing Kit — IWR6843AOP
 
-<span class="badge badge-dev">Pre-order open — ships Q3 2026</span>
+<span class="badge badge-dev">Pre-order open — ships Q4 2026</span>
 
 The sensor your robot uses when it can't see.
 
@@ -24,10 +24,10 @@ Built and tested on a Jetson Orin Nano Super. The config file included with the 
 
 <div class="preorder-box">
 
-### Pre-order — $279
+### Pre-order — $349
 
-<div class="preorder-price">$279</div>
-<p class="preorder-note">Evaluation board for development use · Charge on order · Ships Q3 2026</p>
+<div class="preorder-price">$349</div>
+<p class="preorder-note">Evaluation board for development use · Charge on order · Ships Q4 2026</p>
 
 **[→ Pre-order on the store page](/store/)**
 
@@ -64,7 +64,7 @@ Built and tested on a Jetson Orin Nano Super. The config file included with the 
 
 Camera-based collision detection fails in direct sunlight, low light, dust, and any time the obstacle is behind something else in frame. Lidar is expensive, mechanically complex, and has its own occlusion problems on manipulator arms in motion.
 
-mmWave radar has no moving parts, costs under $200, works in complete darkness, and doesn't care about dust or spray. The tradeoff is resolution — you get a sparse point cloud, not a photo. For collision detection and presence sensing on a robot arm, that's exactly the tradeoff you want.
+mmWave radar has no moving parts, works in complete darkness, and doesn't care about dust or spray. The tradeoff is resolution — you get a sparse point cloud, not a photo. For collision detection and presence sensing on a robot arm, that's exactly the tradeoff you want.
 
 {{< figure src="/images/workshop/workshop-jetson.jpg" alt="Jetson Orin development setup" >}}
 
