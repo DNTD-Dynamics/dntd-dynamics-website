@@ -1,91 +1,60 @@
 ---
-title: "Ohm and Iron Workshop"
-description: "What's currently being developed in the lab, on the bench or tested in the field — by DNTD Dynamics."
+title: "Ohm & Iron Workshop"
+description: "What's currently being developed in the lab, on the bench, or tested in the field — by DNTD Dynamics."
 url: /workshop/
 layout: page
 showToc: false
 ---
 
-**ForeForce by DNTD Dynamics — mmWave safety perception for robot arms and mobile robots.**
+The workshop floor at DNTD Dynamics. Hardware, software, and the occasional stubborn piece of biology — built, broken, and documented as it happens.
 
-Purpose-built sensing kits with focused integration, source-available software (BSL 1.1), and documentation written by someone who actually debugged the hardware.
+This isn't a single-product storefront. It's where every active build lives, from mmWave sensing kits to mycelium contamination detection to a display that shouldn't work as well as it does. Some of it ships. Some of it is still on the bench. All of it gets written up honestly, bugs included.
 
 ---
 
-## Industrial — ForeForce Sensing Kit
+<div class="workshop-cards">
 
-<span class="badge badge-dev">Waitlist open — ships Q4 2026</span>
+<div class="workshop-card">
 
-For fixed installations: robot arms, machine cells, workstations.
+{{< figure src="/images/workshop/workshop-evm.jpg" alt="ForeForce mmWave sensing board" >}}
 
-The sensor your robot uses when it can't see.
+### ForeForce
+<span class="badge badge-active">Active — waitlist open</span>
 
-No camera. No lidar. Built on 60–64 GHz FMCW radar-on-chip (TI IWR6843AOP), the kit senses through dust, darkness, and direct occlusion, outputs a 3D point cloud over USB at 10 Hz, and connects to ROS2 in under an hour with the included driver package.
+mmWave safety perception for robot arms and mobile robots. No camera, no lidar — senses through dust, darkness, and occlusion.
 
-Developed and tested on a Jetson Orin Nano Super. Ships with a working, tuned configuration for arm-mounted collision detection — not a sanitized example from an application note.
-
-<div class="preorder-box">
-
-### Board — $449
-
-<div class="preorder-price">$99 refundable deposit</div>
-<p class="preorder-note">Balance of $350 invoiced at ship · Deposit refundable anytime · Ships Q4 2026 · Development kit — for design professionals and B2B use</p>
-
-Ordering opens soon. Join the waitlist and you'll be first in line when it does.
-
-{{< email-signup label="Join the waitlist for the Industrial kit" button="Join waitlist" >}}
+[→ Explore ForeForce](/workshop/foreforce/)
 
 </div>
 
-Commercial deployments also require a [ForeForce commercial software license](/store/) — one per deployed system. Read, run, learn, and non-commercial use are free under BSL 1.1.
+<div class="workshop-card">
 
-### What's included
+{{< figure src="/images/workshop/workshop-mycelium-placeholder.jpg" alt="Mycelium cultivation contamination detection" >}}
 
-- DNTD-designed mmWave sensing board (custom PCB built on the TI IWR6843AOP)
-- ROS2 driver package (Python, tested on JetPack 6.2.2)
-- Working configuration tuned for arm-mounted collision detection
-- Zone detection library with `STOP` / `CAUTION` / `CLEAR` output
-- Getting started guide — written for builders, not datasheets
-- Repository access for all kit owners
+### MyceliumVision
+<span class="badge badge-dev">In development</span>
 
-{{< figure src="/images/workshop/workshop-evm.jpg" alt="mmWave development board" >}}
+ML-based contamination detection for mushroom cultivation. Lion's Mane as the primary subject, PyTorch + OpenCV on the bench.
 
-### Specs
+[→ Lab notes tagged mycology](/tags/mycology/)
 
-<table class="spec-table">
-  <tr><td>Frequency</td><td>60–64 GHz (FMCW)</td></tr>
-  <tr><td>Range</td><td>0.1 – 8.9 m</td></tr>
-  <tr><td>Field of view</td><td>±90° azimuth / ±40° elevation</td></tr>
-  <tr><td>Output</td><td>x/y/z point cloud at 10 Hz via USB</td></tr>
-  <tr><td>Interface</td><td>Dual UART over USB</td></tr>
-  <tr><td>Power</td><td>5V USB · ~1.2W typical</td></tr>
-  <tr><td>Radar SDK</td><td>TI mmWave SDK 3.5.x</td></tr>
-  <tr><td>Tested on</td><td>Jetson Orin Nano Super, JetPack 6.2.2</td></tr>
-  <tr><td>Ships as</td><td>Development kit — development and evaluation use only</td></tr>
-</table>
+</div>
 
-<p class="dev-kit-notice">Sold as a development kit for evaluation and design by professionals. Not an FCC-authorized end product. Buyers integrating ForeForce into a deployed system are responsible for conducting a risk assessment and validating conformity per applicable standards (including ISO 10218 / ISO/TS 15066, ANSI/RIA R15.06) in their complete system.</p>
+<div class="workshop-card">
 
-{{< figure src="/images/workshop/workshop-evm-working.jpg" alt="mmWave point cloud output" >}}
+{{< figure src="/images/workshop/workshop-lumina-placeholder.jpg" alt="Project Lumina volumetric display" >}}
 
-### Why no camera, why not lidar
+### Project Lumina
+<span class="badge badge-poc">POC</span>
 
-Camera-based collision detection fails in direct sunlight, low light, dust, and any time the obstacle is behind something else in frame. Lidar is expensive, mechanically complex, and has its own occlusion problems on manipulator arms in motion.
+A compact, self-contained volumetric display. Early results are promising and strange in equal measure — full writeup coming once the architecture is further along.
 
-mmWave radar has no moving parts, works in complete darkness, and doesn't care about dust or spray. The tradeoff is resolution — you get a sparse point cloud, not a photo. For collision detection and presence sensing on a robot arm, that's exactly the tradeoff you want.
+[→ Lab notes tagged lumina](/tags/lumina/)
 
-{{< figure src="/images/workshop/workshop-jetson.jpg" alt="Jetson Orin development setup" >}}
+</div>
+
+</div>
 
 ---
 
-## Mobile Robotics — ForeForce Mobile Kit
-
-<span class="badge badge-soon">Coming soon — join the list</span>
-
-For battery-powered platforms: AMRs, mobile robots, anything where power budget matters.
-
-Lower-power variant built on the TI IWRL6432AOP. Same ROS2 integration, same documentation standard, optimized for standalone and mobile platforms.
-
-Pricing and availability will be announced to the list first.
-
-{{< email-signup label="Notify me when the Mobile kit is available" button="Notify me" >}}
+More projects move onto this floor as they reach bench-testable stages. [See everything currently active →](/projects/)
