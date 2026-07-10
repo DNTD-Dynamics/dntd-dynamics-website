@@ -30,9 +30,9 @@ mmWave safety perception for robot arms and mobile robots. No camera, no lidar �
 ### Sterling AI
 <span class="badge badge-active">Active</span>
 
-Local AI runtime for the homelab and eventually the sensing platform. Mistral 7B via Ollama, ChromaDB RAG for long-term memory, hybrid intent router. SQLite for action logging.
+A local, privacy-first AI assistant for the homelab and eventually the sensing platform.
 
-[→ Lab notes tagged sterling](/tags/sterling/)
+[→ Explore Sterling](/workshop/sterling/)
 
 </div>
 
