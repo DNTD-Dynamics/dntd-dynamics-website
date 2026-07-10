@@ -1,0 +1,37 @@
+<!--
+  DNTD Dynamics — honeycomb signal traces
+  ==========================================
+  Five short line-paths angled to the same 60°-multiples as the
+  hex grid in honeycomb-bg.css, so the light pulses read as
+  travelling along lattice lines. Two fast, three slow.
+
+  Styling and the shared @keyframes live in
+  assets/css/extended/honeycomb-bg.css — this file only defines
+  the geometry and each path's own speed/length.
+
+  Coordinates are in a 1600x900 viewBox that scales to fill any
+  viewport (preserveAspectRatio="xMidYMid slice"), so it doesn't
+  need to be pixel-registered to the tiled background grid —
+  matching angles is what sells the effect, not exact alignment.
+
+  To add or remove a trace: copy a <path> block, adjust the "d"
+  coordinates (keep segments at 0/60/120/180/240/300 degree
+  headings to stay grid-aligned), set --dash-end to
+  -(path length + 30), and set animation-duration.
+-->
+<svg class="honeycomb-traces" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+  <!-- fast trace 1 — length 300, duration 6s -->
+  <path d="M 150,150 L 250,150 L 300,236.6 L 400,236.6" style="--dash-end:-330; animation-duration:6s;" />
+
+  <!-- fast trace 2 — length 200, duration 7s -->
+  <path d="M 1300,700 L 1200,700 L 1150,613.4" style="--dash-end:-230; animation-duration:7s;" />
+
+  <!-- slow trace 1 — length 400, duration 28s -->
+  <path d="M 900,120 L 950,206.6 L 1050,206.6 L 1100,293.2 L 1200,293.2" style="--dash-end:-430; animation-duration:28s;" />
+
+  <!-- slow trace 2 — length 300, duration 34s -->
+  <path d="M 250,700 L 300,613.4 L 400,613.4 L 450,526.8" style="--dash-end:-330; animation-duration:34s;" />
+
+  <!-- slow trace 3 — length 300, duration 40s -->
+  <path d="M 1350,300 L 1300,386.6 L 1200,386.6 L 1150,473.2" style="--dash-end:-330; animation-duration:40s;" />
+</svg>
