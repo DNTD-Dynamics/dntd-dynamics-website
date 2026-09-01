@@ -16,13 +16,13 @@ Purpose-built sensing kits with focused integration, source-available software (
 
 ## Industrial — ForeForce Sensing Kit
 
-<span class="badge badge-dev">Waitlist open — ships Q4 2026</span>
+<span class="badge badge-dev">Pre-order open — ships Q4 2026</span>
 
 For fixed installations: robot arms, machine cells, workstations.
 
 The sensor your robot uses when it can't see.
 
-No camera. No lidar. Built on 60–64 GHz FMCW radar-on-chip (TI IWR6843AOP), the kit senses through dust, darkness, and direct occlusion, outputs a 3D point cloud over USB at 10 Hz, and connects to ROS2 in under an hour with the included driver package.
+No camera. No lidar. Built on 60–64 GHz FMCW radar-on-chip technology, the kit senses through dust, darkness, and direct occlusion, outputs a 3D point cloud over USB at 10 Hz, and connects to ROS2 in under an hour with the included driver package.
 
 Developed and tested on a Jetson Orin Nano Super. Ships with a working, tuned configuration for arm-mounted collision detection — not a sanitized example from an application note.
 
@@ -33,9 +33,9 @@ Developed and tested on a Jetson Orin Nano Super. Ships with a working, tuned co
 <div class="preorder-price">$99 refundable deposit</div>
 <p class="preorder-note">Balance of $350 invoiced at ship · Deposit refundable anytime · Ships Q4 2026 · Development kit — for design professionals and B2B use</p>
 
-Ordering opens soon. Join the waitlist and you'll be first in line when it does.
+Pre-orders are open now — reserve your board in the [store](/store/).
 
-{{< email-signup label="Join the waitlist for the Industrial kit" button="Join waitlist" >}}
+<a href="/store/" class="button">Reserve a board →</a>
 
 </div>
 
@@ -43,7 +43,7 @@ Commercial deployments also require a [ForeForce commercial software license](/s
 
 ### What's included
 
-- DNTD-designed mmWave sensing board (custom PCB built on the TI IWR6843AOP)
+- DNTD-designed mmWave sensing board (custom PCB built on 60 GHz radar-on-chip silicon)
 - ROS2 driver package (Python, tested on JetPack 6.2.2)
 - Working configuration tuned for arm-mounted collision detection
 - Zone detection library with `STOP` / `CAUTION` / `CLEAR` output
@@ -61,7 +61,7 @@ Commercial deployments also require a [ForeForce commercial software license](/s
   <tr><td>Output</td><td>x/y/z point cloud at 10 Hz via USB</td></tr>
   <tr><td>Interface</td><td>Dual UART over USB</td></tr>
   <tr><td>Power</td><td>5V USB · ~1.2W typical</td></tr>
-  <tr><td>Radar SDK</td><td>TI mmWave SDK 3.5.x</td></tr>
+  <tr><td>Radar SDK</td><td>Vendor mmWave SDK — supported versions in the docs</td></tr>
   <tr><td>Tested on</td><td>Jetson Orin Nano Super, JetPack 6.2.2</td></tr>
   <tr><td>Ships as</td><td>Development kit — development and evaluation use only</td></tr>
 </table>
@@ -86,7 +86,7 @@ mmWave radar has no moving parts, works in complete darkness, and doesn't care a
 
 For battery-powered platforms: AMRs, mobile robots, anything where power budget matters.
 
-Lower-power variant built on the TI IWRL6432AOP. Same ROS2 integration, same documentation standard, optimized for standalone and mobile platforms.
+Lower-power variant built on low-power mmWave radar-on-chip silicon. Same ROS2 integration, same documentation standard, optimized for standalone and mobile platforms.
 
 Pricing and availability will be announced to the list first.
 

@@ -20,9 +20,8 @@ The full ForeForce pipeline is public on [GitHub](https://github.com/DNTD-Dynami
 
 <div class="preorder-box">
 
-<div class="preorder-price">Software Package per system $349</div>
-<div class="preorder-price">ForeForce board $99</div>
-<p class="preorder-note">Per deployed system · works with the standard TI IWR6843AOPEVM on any Ubuntu 22.04 host</p>
+<div class="preorder-price">$349</div>
+<p class="preorder-note">Per deployed system · runs on standard, commercially available 60 GHz mmWave evaluation hardware on any Ubuntu 22.04 host — supported modules are listed in the docs</p>
 
 <span class="badge badge-dev">Opens soon</span>
 
@@ -41,7 +40,7 @@ The full ForeForce pipeline is public on [GitHub](https://github.com/DNTD-Dynami
 
 **Scaling past a pilot?** The **5-system pack is $1,395** — five deployment licenses, one support relationship, one invoice.
 
-<span class="badge badge-dev">Pending TI legal clearance</span> · <a href="mailto:info@dntddynamics.com?subject=Notify me — ForeForce 5-pack">Email me when this opens →</a>
+<span class="badge badge-dev">Opens soon</span> · <a href="mailto:info@dntddynamics.com?subject=Notify me — ForeForce 5-pack">Email me when this opens →</a>
 
 **Building ForeForce into a product you sell?** OEM and integrator licensing is a conversation, not a checkout — **info@dntddynamics.com**.
 
@@ -76,7 +75,7 @@ A DNTD-designed sensor board built for deployment rather than evaluation: compac
 
 ## Run it free
 
-Just exploring? Clone the repo and run the full pipeline on a TI evaluation module — zone detection, static-person hold, the ROS 2 safety node, all of it. Free for non-commercial use under BSL 1.1, forever. When you're ready to deploy commercially, the license above is the upgrade path.
+Just exploring? Clone the repo and run the full pipeline on a supported mmWave evaluation module — zone detection, static-person hold, the ROS 2 safety node, all of it. Free for non-commercial use under BSL 1.1, forever. When you're ready to deploy commercially, the license above is the upgrade path.
 
 <a href="https://github.com/DNTD-Dynamics/ForeForce-mmwave-cobot-safety-system" class="button">ForeForce on GitHub →</a>
 

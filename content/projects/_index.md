@@ -12,9 +12,9 @@ Everything on the bench right now.
 
 ## 01 — ForeForce mmWave Sensing Kit <span class="badge badge-active">Active</span>
 
-360° collision detection and presence sensing for robot arms. IWR6843AOP on Jetson Orin Nano Super. TLV point cloud pipeline live at 10 Hz. Zone detection integrating now. Pre-order launching Q4 2026.
+360° collision detection and presence sensing for robot arms. 60 GHz mmWave radar-on-chip on Jetson Orin Nano Super. Full pipeline validated end to end — radar → safety node → arm controller — with live CLEAR / CAUTION / STOP demo on real hardware. Pre-orders open now; boards ship Q4 2026.
 
-Hardware goal: three-sensor array covering the full arm sweep volume. Current phase: single-sensor bringup, building toward the demo video.
+Hardware goal: three-sensor array covering the full arm sweep volume. Current phase: demo video and first production board run.
 
 [→ Workshop page](/workshop/) · [→ Lab notes tagged mmwave](/tags/mmwave/)
 
