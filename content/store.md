@@ -20,7 +20,8 @@ The full ForeForce pipeline is public on [GitHub](https://github.com/DNTD-Dynami
 
 <div class="preorder-box">
 
-<div class="preorder-price">$349</div>
+<div class="preorder-price">Software Package per system $349</div>
+<div class="preorder-price">ForeForce board $99</div>
 <p class="preorder-note">Per deployed system · works with the standard TI IWR6843AOPEVM on any Ubuntu 22.04 host</p>
 
 <span class="badge badge-dev">Opens soon</span>
