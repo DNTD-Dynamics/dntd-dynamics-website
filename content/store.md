@@ -30,10 +30,10 @@ The full ForeForce pipeline is public on [GitHub](https://github.com/DNTD-Dynami
 Deposit refundable in full — any time, any reason.
 </p>
 
-<a href="https://buy.stripe.com/8x228r3zp4JpfwK3bues000" class="button">Reserve a board →</a>
+<a href="https://buy.stripe.com/28E8wP7PFa3JgAO4fyes002" class="button">Reserve a board →</a>
 
 <p style="font-size:13px;margin-top:0.75rem;color:var(--secondary);">
-Ships Q4 2026 (estimate) · Development kit — for design professionals and B2B use
+Ships Q1 2027 (estimate) · Development kit — for design professionals and B2B use not FCC certified
 </p>
 
 </div>
@@ -98,7 +98,7 @@ Just exploring? Clone the repo and run the full pipeline on a supported mmWave e
 
 ## Mobile & battery-powered variant
 
-A low-power variant for mobile robots and battery-powered platforms is planned.
+A low-power variant for mobile robots and battery-powered platforms is in the works and details will be released Q4 2026.
 
 {{< email-signup label="Join the waitlist — no spam, just ship updates and new kit announcements." button="Join the waitlist" >}}
 
