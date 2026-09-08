@@ -68,7 +68,7 @@ Every board includes one commercial deployment license for the system it's deplo
 
 <p class="dev-kit-notice">Sold as a development kit for evaluation and design by professionals. Not an FCC-authorized end product. Buyers integrating ForeForce into a deployed system are responsible for conducting a risk assessment and validating conformity per applicable standards (including ISO 10218 / ISO/TS 15066, ANSI/RIA R15.06) in their complete system.</p>
 
-{{< figure src="/images/workshop/workshop-evm-working.jpg" alt="mmWave point cloud output" >}}
+
 
 ### Why no camera, why not lidar
 
@@ -76,7 +76,7 @@ Camera-based collision detection fails in direct sunlight, low light, dust, and 
 
 mmWave radar has no moving parts, works in complete darkness, and doesn't care about dust or spray. The tradeoff is resolution — you get a sparse point cloud, not a photo. For collision detection and presence sensing on a robot arm, that's exactly the tradeoff you want.
 
-{{< figure src="/images/workshop/workshop-jetson.jpg" alt="Jetson Orin development setup" >}}
+
 
 ---
 
