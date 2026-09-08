@@ -51,7 +51,6 @@ Every board includes one commercial deployment license for the system it's deplo
 - Getting started guide — written for builders, not datasheets
 - Repository access for all kit owners
 
-{{< figure src="/images/workshop/workshop-evm.jpg" alt="mmWave development board" >}}
 
 ### Specs
 
