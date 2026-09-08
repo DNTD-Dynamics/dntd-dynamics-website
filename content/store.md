@@ -14,14 +14,56 @@ The full ForeForce pipeline is public on [GitHub](https://github.com/DNTD-Dynami
 
 ---
 
-## Deploy now — ForeForce Commercial License
+## Pre-order — The ForeForce Board (license included)
+
+<span class="badge badge-dev">Pre-order open — estimated ship Q4 2026</span>
+
+<div class="preorder-box">
+
+### Board + Commercial License — $449
+
+<div class="preorder-price">$99 refundable deposit</div>
+
+<p style="font-size:16px;line-height:1.6;margin-top:0.75rem;">
+<strong>$449 total</strong> — includes the board and one commercial deployment license.<br>
+<strong>$99 refundable deposit today</strong> · $350 balance charged only at ship.<br>
+Deposit refundable in full — any time, any reason.
+</p>
+
+<a href="https://buy.stripe.com/8x228r3zp4JpfwK3bues000" class="button">Reserve a board →</a>
+
+<p style="font-size:13px;margin-top:0.75rem;color:var(--secondary);">
+Ships Q4 2026 (estimate) · Development kit — for design professionals and B2B use
+</p>
+
+</div>
+
+A DNTD-designed sensor board built for deployment rather than evaluation: compact, integration-ready, made to mount on an arm or AMR and disappear into your build. The board design is being finalized now — pre-order volume directly shapes the first production run.
+
+**Every board ships with:**
+
+- The ForeForce board — DNTD-designed mmWave sensor hardware
+- **Commercial deployment license included** (one deployed system — a $349 value)
+- Production radar configuration, pre-loaded
+- Private repo access
+- 90 days of priority builder support
+
+> **Development kit notice:** The ForeForce board is sold for evaluation and development use by design professionals and businesses. This device has not been authorized as required by the rules of the Federal Communications Commission and is not offered for sale for consumer use. An FCC-certified production module is on the roadmap.
+
+---
+
+## License only — for hardware you already own
 
 <span class="badge badge-dev">Introductory pricing — first production run</span>
 
 <div class="preorder-box">
 
-<div class="preorder-price">$349</div>
-<p class="preorder-note">Per deployed system · runs on standard, commercially available 60 GHz mmWave evaluation hardware on any Ubuntu 22.04 host — supported modules are listed in the docs</p>
+### ForeForce Commercial License — $349
+
+<p style="font-size:16px;line-height:1.6;margin-top:0.75rem;">
+<strong>Software license only — no hardware included.</strong><br>
+One license per deployed system. Runs on standard, commercially available 60 GHz mmWave evaluation hardware on any Ubuntu 22.04 host — supported modules are listed in the docs.
+</p>
 
 <span class="badge badge-dev">Opens soon</span>
 
@@ -43,33 +85,6 @@ The full ForeForce pipeline is public on [GitHub](https://github.com/DNTD-Dynami
 <span class="badge badge-dev">Opens soon</span> · <a href="mailto:info@dntddynamics.com?subject=Notify me — ForeForce 5-pack">Email me when this opens →</a>
 
 **Building ForeForce into a product you sell?** OEM and integrator licensing is a conversation, not a checkout — **info@dntddynamics.com**.
-
----
-
-## Pre-order — The ForeForce Board (license included)
-
-<span class="badge badge-dev">Pre-order open — estimated ship Q4 2026</span>
-
-<div class="preorder-box">
-
-<div class="preorder-price">$449</div>
-<p class="preorder-note">Board + one commercial deployment license · $99 refundable deposit today · $350 balance charged only at ship · deposit refundable in full, any time, any reason</p>
-
-<a href="https://buy.stripe.com/8x228r3zp4JpfwK3bues000" class="button">Reserve a board →</a>
-
-</div>
-
-A DNTD-designed sensor board built for deployment rather than evaluation: compact, integration-ready, made to mount on an arm or AMR and disappear into your build. The board design is being finalized now — pre-order volume directly shapes the first production run.
-
-**Every board ships with:**
-
-- The ForeForce board — DNTD-designed mmWave sensor hardware
-- **Commercial deployment license included** (one deployed system — a $349 value)
-- Production radar configuration, pre-loaded
-- Private repo access
-- 90 days of priority builder support
-
-> **Development kit notice:** The ForeForce board is sold for evaluation and development use by design professionals and businesses. This device has not been authorized as required by the rules of the Federal Communications Commission and is not offered for sale for consumer use. An FCC-certified production module is on the roadmap.
 
 ---
 
