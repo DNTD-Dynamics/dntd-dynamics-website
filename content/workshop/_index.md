@@ -17,7 +17,7 @@ This isn't a single-product storefront. It's where every active build lives, fro
 <div class="workshop-card">
 
 ### ForeForce
-<span class="badge badge-active">Active — waitlist open</span>
+<span class="badge badge-active">Active — pre-order open</span>
 
 mmWave safety perception for robot arms and mobile robots. No camera, no lidar — senses through dust, darkness, and occlusion.
 

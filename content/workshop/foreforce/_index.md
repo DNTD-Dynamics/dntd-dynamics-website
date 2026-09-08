@@ -28,10 +28,10 @@ Developed and tested on a Jetson Orin Nano Super. Ships with a working, tuned co
 
 <div class="preorder-box">
 
-### Board — $449
+### Board + Commercial License — $449
 
 <div class="preorder-price">$99 refundable deposit</div>
-<p class="preorder-note">Balance of $350 invoiced at ship · Deposit refundable anytime · Ships Q4 2026 · Development kit — for design professionals and B2B use</p>
+<p class="preorder-note">$449 total — includes the board and one commercial deployment license · $99 refundable deposit today · $350 balance charged only at ship · Deposit refundable in full, any time · Ships Q4 2026 · Development kit — for design professionals and B2B use</p>
 
 Pre-orders are open now — reserve your board in the [store](/store/).
 
@@ -39,10 +39,11 @@ Pre-orders are open now — reserve your board in the [store](/store/).
 
 </div>
 
-Commercial deployments also require a [ForeForce commercial software license](/store/) — one per deployed system. Read, run, learn, and non-commercial use are free under BSL 1.1.
+Every board includes one commercial deployment license for the system it's deployed on — nothing extra to buy. Deploying on hardware you already own instead? A [standalone commercial software license](/store/) is available — one per deployed system. Read, run, learn, and non-commercial use are free under BSL 1.1.
 
 ### What's included
 
+- **One commercial deployment license** — included ($349 value)
 - DNTD-designed mmWave sensing board (custom PCB built on 60 GHz radar-on-chip silicon)
 - ROS2 driver package (Python, tested on JetPack 6.2.2)
 - Working configuration tuned for arm-mounted collision detection

@@ -46,14 +46,14 @@ The full ForeForce pipeline is public on [GitHub](https://github.com/DNTD-Dynami
 
 ---
 
-## Pre-order — The ForeForce Board
+## Pre-order — The ForeForce Board (license included)
 
 <span class="badge badge-dev">Pre-order open — estimated ship Q4 2026</span>
 
 <div class="preorder-box">
 
-<div class="preorder-price">$99 deposit</div>
-<p class="preorder-note">$449 total · balance ($350) charged only at ship · deposit refundable in full, any time, any reason</p>
+<div class="preorder-price">$449</div>
+<p class="preorder-note">Board + one commercial deployment license · $99 refundable deposit today · $350 balance charged only at ship · deposit refundable in full, any time, any reason</p>
 
 <a href="https://buy.stripe.com/8x228r3zp4JpfwK3bues000" class="button">Reserve a board →</a>
 
